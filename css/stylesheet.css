@@ -36,8 +36,6 @@ a:hover{
 /* common utility css end */
 
 
-
-
 /* navbar */
 .navbar-sec{
     position: fixed;
@@ -49,16 +47,35 @@ a:hover{
     flex-wrap: wrap;
     max-width: 15vmax;
     width: 100%;
-    height: auto;
+    height: 100vh;
     /* background-color: var(--dark-color); */
     border-right:0.5px solid var(--border-color);
 }
+.nav-main{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.navbar-item:hover{
+     background: var(--border-color);
+     padding: auto 100px;
+     border-radius: 5px;
+    
+}
+.navbar-item{
+    display: flex;
+    width: 160px;
+    width: fit-content;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 20px;
+    justify-content: space-between;
+}
 /* last two item in navbar */
 .nav-item-space{
-    margin-top: 17vmax;
+    margin-top: 13vmax;
 }
 .navbar {
-   
     margin-top: 0;
 }
 
