@@ -1,2 +1,2 @@
-# Team_Insta
-In this Team Usman Sami, Abdullah, Sikandar and Salman Seed Working on Cloning of Instagram
+# Instagram-
+dev1_abdullah,dev2_osman,dev_Muhammad Sikandar,hello
