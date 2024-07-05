@@ -1,0 +1,101 @@
+/* common utility css start */
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: black;
+    --secondary-color: white;
+    --dark-color:gray;
+    --border-color:rgb(122, 122, 122);
+    /* background: linear-gradient(circle, rgb(238 1 142), rgb(254 123 11), rgb(87 9 28)); */
+}
+
+::-webkit-scrollbar{
+    width: 0.5rem;
+}
+::-webkit-scrollbar-track{
+    background-color: gray;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #ffffff;
+}
+
+body{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+img,
+a:hover{
+    cursor: pointer;
+}
+
+
+/* common utility css end */
+
+
+
+
+/* navbar */
+.navbar-sec{
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    margin: auto;
+    flex-wrap: wrap;
+    max-width: 15vmax;
+    width: 100%;
+    height: auto;
+    /* background-color: var(--dark-color); */
+    border-right:0.5px solid var(--border-color);
+}
+/* last two item in navbar */
+.nav-item-space{
+    margin-top: 17vmax;
+}
+.navbar {
+   
+    margin-top: 0;
+}
+
+
+.nav-cu{
+    position: fixed;
+    width: 15%;
+    margin-top: 2rem;
+    justify-content: flex-start;
+    background-color: var(--primary-color);
+}
+
+.icons{
+    
+    gap: 10px;
+    margin-right: 2rem;
+}
+
+
+/* content section */
+.main-sec{
+    max-width: auto;
+    width: 100%;
+    height: 100vh;
+    /* background-color: var(--dark-color); */
+    border-right:0.5px solid rgb(122, 122, 122);
+}
+
+/*content-sec> post-sec */
+.post-sec{
+    /* max-width: 43.5vmax;
+    width: 100%; */
+}
+
+/*content-sec> sugested sec */
+.sugested-sec{
+    padding-left: 4rem;
+    max-width: 26.5vmax;
+    width: 100%;
+}
