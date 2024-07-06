@@ -1,20 +1,42 @@
- // Example of how you might toggle active class based on clicked item
-// document.querySelectorAll('.sidebar a').forEach(item => {
-//     item.addEventListener('click', () => {
-//         document.querySelectorAll('.sidebar a').forEach(el => el.classList.remove('active'));
-//         item.classList.add('active');
-//     });
-// });
+// preloader====
+let loader = document.getElementById("preloader");
+
+window.addEventListener("load", function(){
+    loader.style.display = "none"
+})
 
 
 // ====== like btn ======
-function likebutton(){
-    let heart = document.querySelector(".heart");
-    if (heart.src.match("assets/svg/heart.svg")){
-        heart.src = "assets/svg/heart_red.svg";
-    }
-    else{
-        heart.src = "assets/svg/heart.svg"
-    }
-}
+document.addEventListener('DOMContentLoaded', function() {
+    // Select all like buttons
+    const likeButtons = document.querySelectorAll('.like-button');
+
+    // Iterate over each button and add a click event listener
+    likeButtons.forEach(img => {
+        img.addEventListener('click', function() {
+            // Toggle the 'liked' class on button click
+            img.classList.toggle('liked');
+        });
+    });
+});
+
+
+// ====== favourite btn ========
+// select all like buttons
+const favouritBtn = document.querySelectorAll('.favourit');
+
+favouritBtn.forEach(img =>{
+    img.addEventListener('click', function(){
+        img.classList.toggle('favouritBtn');
+    });
+});
+// function favourite(){
+//     let heart = document.querySelector((".favourit"));
+//     if (heart.src.match("assets/svg/favouritPost.svg")){
+//         heart.src = "assets/svg/favouritpostwhite.svg";
+//     }
+//     else{
+//         heart.src = "assets/svg/favouritPost.svg"
+//     }
+// }
 // ======================
