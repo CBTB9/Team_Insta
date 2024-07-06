@@ -81,7 +81,7 @@
 }
 
 /*======== media quirey for for mobile devices 767px ========= */
-@media (max-width: 768px) and (min-width:455px) {
+@media (max-width: 768px) and (min-width:577px) {
 
     /* navbarr */
     .navbar-sec {
@@ -99,7 +99,7 @@
     }
 
     .search-m-e {
-        margin-left: 40vmax;
+        margin-left: 8vmax;
     }
 
     .main-sec {
@@ -119,13 +119,13 @@
     }
 
     .mob-i-m{
-        margin-left: 11.2vmax;
+        margin-left: 1.2vmax;
     }
 
     /* content main section */
 
     .post-sec {
-        max-width: 68vmax !important;
+        max-width: 100vh !important;
         margin: auto 0 auto 0;
         width: 100%;
     }
