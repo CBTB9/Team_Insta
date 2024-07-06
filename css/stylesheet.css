@@ -78,18 +78,20 @@ a:hover{
     justify-content: center;
     gap: 20px;
 }
-.navbar-item:hover{
+.nav-item:hover{
      background: var(--border-color);
      padding: auto 100px;
      border-radius: 5px;
     
 }
+.nav-item{
+    padding-right: 60px;
+}
 .navbar-item{
     display: flex;
-    width: 160px;
     width: fit-content;
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
     gap: 20px;
     justify-content: space-between;
 }
