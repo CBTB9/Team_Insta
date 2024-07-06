@@ -1,3 +1,11 @@
+// preloader====
+let loader = document.getElementById("preloader");
+
+window.addEventListener("load", function(){
+    loader.style.display = "none"
+})
+
+
 // ====== like btn ======
 document.addEventListener('DOMContentLoaded', function() {
     // Select all like buttons
@@ -11,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
 
 // ====== favourite btn ========
 // select all like buttons
