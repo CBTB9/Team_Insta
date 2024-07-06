@@ -86,6 +86,15 @@ a:hover{
     /* background-color: var(--dark-color); */
     border-right:0.5px solid rgb(122, 122, 122);
 }
+/* like btn */
+
+.like-button.liked {
+    background: url(/Team_Insta/assets/svg/heart_red.svg) no-repeat; /* Change color when liked */
+}
+/* favourit btn */
+.favourit.favouritBtn{
+    background: url(/Team_Insta/assets/svg/favouritpostwhite.svg) no-repeat;
+}
 
 /*content-sec> post-sec */
 .post-sec{
