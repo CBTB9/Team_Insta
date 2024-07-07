@@ -1,9 +1,6 @@
 /*=========== media quiry for min 1269px ============= */
 @media (min-width: 1265px) {
-    .post-sec {
-        margin-left: 14vmax;
-        margin-right: 0;
-    }
+    
 }
 
 /* media quiry for large divices */
@@ -14,24 +11,21 @@
         max-width: 7vmax !important;
     }
 
-    /* content section */
-    .post-sec {
-        margin-right: 0;
-        margin-left: 11vmax;
-    }
-
-    .sugested-sec {
-        margin-left: 0;
-    }
-
-    /* navbar section */
     /* instagram/logo of insta */
     .insta-name {
         display: none;
     }
 
+    .navbar-sec .nav-item {
+        margin: auto auto auto 1rem !important;
+    }
+
+    .navbar-sec .nav-item-space {
+        margin: auto auto auto 0.4rem !important;
+    }
+
     .insta-logo {
-        content: url(/Instagram-/assets/svg/instalogo.svg);
+        content: url(/assets/svg/instalogo.svg);
     }
 
     /* icons details/ only icons */
@@ -39,10 +33,13 @@
         display: none;
     }
 
-    /* sugested section */
+    /*====== navbar end======= */
+    /* content section */
+   
     .sugested-sec {
         margin-left: 0;
     }
+
 }
 
 /*===== media quiry for large divice max width 1160px =======*/
@@ -52,16 +49,22 @@
     .navbar-sec {
         max-width: 7vmax !important;
     }
+
     .insta-name {
         display: none;
     }
-    .navbar-sec .nav-item{
+
+    .navbar-sec .nav-item {
         margin: auto auto auto 1rem !important;
+    }
+
+    .navbar-sec .nav-item-space {
+        margin: auto auto auto 0.4rem !important;
     }
 
     .insta-logo {
         content: url(/assets/svg/instalogo.svg);
-        margin:0 auto auto 0.9rem ;
+        margin: 0 auto auto 0.9rem;
     }
 
     /* icons details/ only icons */
@@ -94,8 +97,8 @@
         border-bottom: 1px solid rgb(122, 122, 122);
         background-color: black;
     }
-   
-    
+
+
 
     .search-m {
         display: flex !important;
@@ -105,7 +108,8 @@
     .nav-item form img {
         margin-top: 8px !important;
     }
-    .nav-item{
+
+    .nav-item {
         padding: 5px 15px !important;
     }
 
@@ -119,26 +123,30 @@
         border-top: 1px solid rgb(122, 122, 122);
         background-color: black;
     }
-.mob-b-nav ul{
-    width: 100%;
-    display: flex !important;
-    justify-content:space-evenly !important;
-    align-items: center;
-}
+
+    .mob-b-nav ul {
+        width: 100%;
+        display: flex !important;
+        justify-content: space-evenly !important;
+        align-items: center;
+    }
 
     /* content main section */
     .main-sec .container {
         padding: 0 !important;
     }
+
     .main-sec {
         padding-top: 90px;
     }
+
     .post-sec {
         margin: 0 !important;
         padding: 0 !important;
         width: 100%;
     }
-    .post .card{
+
+    .post .card {
         width: 100% !important;
     }
 
@@ -163,7 +171,7 @@
         border-bottom: 1px solid rgb(122, 122, 122);
         background-color: black;
     }
-   
+
     .nav-item input {
         display: none !important;
     }
@@ -176,7 +184,8 @@
     .nav-item form img {
         margin-top: 8px !important;
     }
-    .nav-item{
+
+    .nav-item {
         padding: 5px 15px !important;
     }
 
@@ -190,26 +199,30 @@
         border-top: 1px solid rgb(122, 122, 122);
         background-color: black;
     }
-.mob-b-nav ul{
-    width: 100%;
-    display: flex !important;
-    justify-content:space-evenly !important;
-    align-items: center;
-}
+
+    .mob-b-nav ul {
+        width: 100%;
+        display: flex !important;
+        justify-content: space-evenly !important;
+        align-items: center;
+    }
 
     /* content main section */
     .main-sec .container {
         padding: 0 !important;
     }
+
     .main-sec {
         padding-top: 90px;
     }
+
     .post-sec {
         margin: 0 !important;
         padding: 0 !important;
         width: 100%;
     }
-    .post .card{
+
+    .post .card {
         width: 100% !important;
     }
 
