@@ -58,8 +58,6 @@ a:hover{
 /* common utility css end */
 
 
-
-
 /* navbar */
 .navbar-sec{
     position: fixed;
@@ -71,23 +69,46 @@ a:hover{
     flex-wrap: wrap;
     max-width: 15vmax;
     width: 100%;
-    height: auto;
+    height: 100vh;
     /* background-color: var(--dark-color); */
     border-right:0.5px solid var(--border-color);
+}
+.nav-main{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.nav-item:hover{
+     background: var(--border-color);
+     padding: auto 100px;
+     border-radius: 5px;
+    
+}
+.nav-item{
+    padding-right: 60px;
+}
+.navbar-item{
+    display: flex;
+    width: fit-content;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
 }
 .pro-img{
     width: 30px;
     height: 30px;
+    margin-right: 10px;
+
     object-fit: cover;
     border-radius: 50%;
 }
 
 /* last two item in navbar */
 .nav-item-space{
-    margin-top: 17vmax;
+    margin-top: 13vmax;
 }
 .navbar {
-   
     margin-top: 0;
 }
 
@@ -118,11 +139,11 @@ a:hover{
 /* like btn */
 
 .like-button.liked {
-    background: url(/Team_Insta/assets/svg/heart_red.svg) no-repeat; /* Change color when liked */
+    background: url(/assets/svg/heart_red.svg) no-repeat; /* Change color when liked */
 }
 /* favourit btn */
 .favourit.favouritBtn{
-    background: url(/Team_Insta/assets/svg/favouritpostwhite.svg) no-repeat;
+    background: url(/assets/svg/favouritpostwhite.svg) no-repeat;
 }
 
 /*content-sec> post-sec */
