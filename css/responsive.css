@@ -52,27 +52,25 @@
     .navbar-sec {
         max-width: 7vmax !important;
     }
-
-    /* sugested for you section */
-    .sugested-sec {
-        display: none;
-    }
-
-    .post-sec {
-        margin-left: 22.9vmax;
-    }
-
-    /* 1264 in 768 abve devices */
     .insta-name {
         display: none;
     }
+    .navbar-sec .nav-item{
+        margin: auto auto auto 1rem !important;
+    }
 
     .insta-logo {
-        content: url(/Instagram-/assets/svg/instalogo.svg);
+        content: url(/assets/svg/instalogo.svg);
+        margin:0 auto auto 0.9rem ;
     }
 
     /* icons details/ only icons */
     .i-d {
+        display: none;
+    }
+
+    /* sugested for you section */
+    .sugested-sec {
         display: none;
     }
 
@@ -81,9 +79,7 @@
 }
 
 /*======== media quirey for for mobile devices 767px ========= */
-@media (max-width: 768px) and (min-width:577px) {
-
-    /* navbarr */
+@media (max-width: 768px) and (min-width: 577px) {
     .navbar-sec {
         display: none !important;
     }
@@ -91,55 +87,64 @@
     .mob-t-nav {
         display: flex !important;
         position: fixed;
-        top: 0;
         width: 100%;
+        justify-content: space-between;
+        top: 0;
         z-index: 999;
         border-bottom: 1px solid rgb(122, 122, 122);
         background-color: black;
     }
+   
+    
 
-    .search-m-e {
-        margin-left: 8vmax;
+    .search-m {
+        display: flex !important;
+        padding: 0;
     }
 
-    .main-sec {
-        padding-top: 90px;
+    .nav-item form img {
+        margin-top: 8px !important;
+    }
+    .nav-item{
+        padding: 5px 15px !important;
     }
 
     /* navbar bottom on mobile screen */
     .mob-b-nav {
         display: flex !important;
         position: fixed;
-        flex-wrap: wrap;
-        flex-shrink: 10px;
         bottom: 0;
         width: 100%;
         z-index: 999;
         border-top: 1px solid rgb(122, 122, 122);
         background-color: black;
     }
-
-    .mob-i-m {
-        margin-left: 1.2vmax;
-    }
+.mob-b-nav ul{
+    width: 100%;
+    display: flex !important;
+    justify-content:space-evenly !important;
+    align-items: center;
+}
 
     /* content main section */
-
+    .main-sec .container {
+        padding: 0 !important;
+    }
+    .main-sec {
+        padding-top: 90px;
+    }
     .post-sec {
-        max-width: 100vh !important;
-        margin: auto 0 auto 0;
+        margin: 0 !important;
+        padding: 0 !important;
         width: 100%;
+    }
+    .post .card{
+        width: 100% !important;
     }
 
     .sugested-sec {
         display: none;
     }
-
-
-    /*ontop instagram,searchbar,notification icon */
-
-
-    /* onbottom  home,explore,reels,create,message,profile/icons only */
 
 }
 
