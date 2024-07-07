@@ -1,10 +1,37 @@
 // preloader====
+setTimeout(() => {
 let loader = document.getElementById("preloader");
 
 window.addEventListener("load", function(){
     loader.style.display = "none"
 })
-
+}, 150);
+// top preloader ==========
+setTimeout(() => {
+    let progressBar = document.getElementById("myProgressBar");
+  
+    let barwidth = 5;
+  
+    let ab = setInterval(progressFunction, 20);
+  
+    function progressFunction() {
+      if (barwidth >= 100) {
+        clearInterval(ab);
+        setTimeout(() => {
+          progressBar.classList.add("height-0");
+        }, 500);
+        setTimeout(() => {
+          document.getElementById("loader").classList.add("hide-loader");
+        }, 500);
+      } else {
+        barwidth++;
+        progressBar.style.width = barwidth + "%";
+        document.getElementById("incrementpercentage").innerHTML = barwidth + "%";
+      }
+    }
+  }, 200);
+  
+// end
 
 // ====== like btn ======
 document.addEventListener('DOMContentLoaded', function() {
