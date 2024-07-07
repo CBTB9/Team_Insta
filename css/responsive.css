@@ -105,8 +105,9 @@
     .main-sec {
         padding-top: 90px;
     }
+
     /* navbar bottom on mobile screen */
-    .mob-b-nav{
+    .mob-b-nav {
         display: flex !important;
         position: fixed;
         flex-wrap: wrap;
@@ -118,7 +119,7 @@
         background-color: black;
     }
 
-    .mob-i-m{
+    .mob-i-m {
         margin-left: 1.2vmax;
     }
 
@@ -139,5 +140,76 @@
 
 
     /* onbottom  home,explore,reels,create,message,profile/icons only */
+
+}
+
+@media (max-width: 576px) and (min-width: 360px) {
+    .navbar-sec {
+        display: none !important;
+    }
+
+    .mob-t-nav {
+        display: flex !important;
+        position: fixed;
+        width: 100%;
+        justify-content: space-between;
+        top: 0;
+        z-index: 999;
+        border-bottom: 1px solid rgb(122, 122, 122);
+        background-color: black;
+    }
+   
+    .nav-item input {
+        display: none !important;
+    }
+
+    .search-m {
+        display: flex !important;
+        padding: 0;
+    }
+
+    .nav-item form img {
+        margin-top: 8px !important;
+    }
+    .nav-item{
+        padding: 5px 15px !important;
+    }
+
+    /* navbar bottom on mobile screen */
+    .mob-b-nav {
+        display: flex !important;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 999;
+        border-top: 1px solid rgb(122, 122, 122);
+        background-color: black;
+    }
+.mob-b-nav ul{
+    width: 100%;
+    display: flex !important;
+    justify-content:space-evenly !important;
+    align-items: center;
+}
+
+    /* content main section */
+    .main-sec .container {
+        padding: 0 !important;
+    }
+    .main-sec {
+        padding-top: 90px;
+    }
+    .post-sec {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100%;
+    }
+    .post .card{
+        width: 100% !important;
+    }
+
+    .sugested-sec {
+        display: none;
+    }
 
 }
