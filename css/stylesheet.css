@@ -150,6 +150,10 @@ ul li {
     object-fit: cover;
     border-radius: 50%;
 }
+/* offcanvas */
+.offcanvas-start.show{
+    left: 4%;
+}
 
 /* last two nav item more */
 .nav-item-space {
