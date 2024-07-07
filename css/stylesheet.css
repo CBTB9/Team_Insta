@@ -1,5 +1,5 @@
 /* common utility css start */
-*{
+* {
     margin: 0;
     box-sizing: border-box;
 }
@@ -7,7 +7,7 @@
 
 /* preloader */
 
-#preloader{
+#preloader {
     background: #000 no-repeat center center;
     background-size: 8%;
     display: flex;
@@ -22,38 +22,85 @@
     z-index: 1000;
 
 }
-#preloader img{
+
+#preloader img {
     width: 8%;
     margin: auto;
 }
-:root{
+
+/* top preloader */
+.loader {
+    background-color: #000;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    top: 0;
+    z-index: 1001;
+    display: flex;
+    align-items: flex-end;
+}
+
+.progress-bar {
+    width: 0;
+    height: 20px;
+    background: linear-gradient(40deg, rgb(239, 19, 96) 0%,
+            rgb(223, 85, 54) 80%,
+            rgb(230, 13, 20) 145%,
+            #c92222 100%);
+    transition: 0.5s linear;
+    display: flex;
+    justify-content: flex-end;
+    transform: translateY(0);
+}
+
+span.number-count {
+    font-size: 130px;
+    color: #fff;
+    padding-right: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.height-0 {
+    transform: translateY(1%);
+}
+
+.hide-loader {
+    display: none;
+}
+
+/* end */
+:root {
     --primary-color: black;
     --secondary-color: white;
-    --dark-color:gray;
-    --border-color:rgb(122, 122, 122);
+    --dark-color: gray;
+    --border-color: rgb(18, 18, 18, 1);
     /* background: linear-gradient(circle, rgb(238 1 142), rgb(254 123 11), rgb(87 9 28)); */
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 0.5rem;
 }
-::-webkit-scrollbar-track{
+
+::-webkit-scrollbar-track {
     background-color: gray;
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     background-color: #ffffff;
 }
 
-body{
+body {
     background-color: var(--primary-color);
     color: white;
 }
 
 img,
-a:hover{
+a:hover {
     cursor: pointer;
 }
-ul li{
+
+ul li {
     list-style: none;
 }
 
@@ -62,7 +109,7 @@ ul li{
 
 
 /* navbar */
-.navbar-sec{
+.navbar-sec {
     position: fixed;
     z-index: 999;
     display: flex;
@@ -72,23 +119,21 @@ ul li{
     width: 100%;
     height: 100vh;
     /* background-color: var(--dark-color); */
-    border-right:0.5px solid var(--border-color);
+    border-right: 0.5px solid var(--border-color);
 }
-.nav-main{
+
+.nav-main {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
 }
-.nav-item:hover{
-     background: var(--border-color);
-     padding: auto 100px;
-     border-radius: 5px;
-    
+
+.nav-item:hover {
+    background: var(--border-color);
+    border-radius: 20px;
 }
-.nav-item:hover{
-    padding-right: 60px;
-}
-.navbar-item{
+
+.navbar-item {
     display: flex;
     width: fit-content;
     flex-direction: row;
@@ -96,7 +141,8 @@ ul li{
     gap: 20px;
     justify-content: space-between;
 }
-.pro-img{
+
+.pro-img {
     width: 30px;
     height: 30px;
     margin-right: 10px;
@@ -105,21 +151,30 @@ ul li{
     border-radius: 50%;
 }
 
+/* last two nav item more */
+.nav-item-space {
+    padding: 0;
+    margin: 0 !important;
+}
+
 /* content section */
-.main-sec{
+.main-sec {
     max-width: auto;
     width: 100%;
     height: 100vh;
     /* background-color: var(--dark-color); */
-    border-right:0.5px solid rgb(122, 122, 122);
+    border-right: 0.5px solid rgb(122, 122, 122);
 }
+
 /* like btn */
 
 .like-button.liked {
-    background: url(/assets/svg/heart_red.svg) no-repeat; /* Change color when liked */
+    background: url(/assets/svg/heart_red.svg) no-repeat;
+    /* Change color when liked */
 }
+
 /* favourit btn */
-.favourit.favouritBtn{
+.favourit.favouritBtn {
     background: url(/assets/svg/favouritpostwhite.svg) no-repeat;
 }
 
@@ -127,7 +182,7 @@ ul li{
 
 
 /*content-sec> sugested sec */
-.sugested-sec{
+.sugested-sec {
     padding-left: 4rem;
     max-width: 26.5vmax;
     width: 100%;
