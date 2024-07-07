@@ -25,16 +25,21 @@
 
 <body>
   <!-- pre loader -->
+  <div class="loader" id="loader">
+    <div class="progress-bar" id="myProgressBar">
+      <span class="number-count" id="incrementpercentage">0%</span>
+    </div>
+  </div>
   <div id="preloader">
     <img src="assets/images/preloader image.png" alt="">
     <img src="assets/images/meta image.png" alt="">
   </div>
 
-  <!-- navbar section -->
+  <!--================ navbar section start ======================-->
   <section>
     <nav class="navbar navbar-sec navbar-expand bg-body-dark " data-bs-theme="dark">
       <ul class="navbar-nav d-flex flex-column nav-main justify-content-start">
-          <a class="navbar-brand my-4 px-3" href="#"><span class="insta-logo"></span><img class="insta-name"
+          <a class="navbar-brand my-4 ms-0 px-3" href="#"><span class="insta-logo"></span><img class="insta-name"
               src="assets/svg/logo.svg" alt="" srcset=""></a>
           <li class="nav-item">
             <a class="nav-link navbar-item active" aria-current="page" href="#"><img src="assets/svg/home.svg" alt=""
@@ -77,13 +82,13 @@
                 class="i-d">Threads</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link navbar-item" aria-disabled="true"><img src="assets/svg/More.svg" alt="" srcset=""><span
+            <a class="nav-link nav-item-space" aria-disabled="true"><img src="assets/svg/More.svg" alt="" srcset=""><span
                 class="i-d">More</span></a>
           </li>
         </ul>
     </nav>
-
   </section>
+
   <!-- ==============navbar for mobile devices start =================-->
   <div class="  row-gap-5">
     <nav class="container-fluid navbar navbar-expand mob-t-nav d-none bg-body-dark " data-bs-theme="dark">
@@ -141,9 +146,10 @@
       </li>
     </ul>
   </div>
-  <!-- ======================== navbar exit ========================== -->
+  <!-- ======================== navbar mobile exit ========================== -->
   <!-- navbar section end -->
-  <!-- content section start -->
+
+  <!--========================= content section start =================-->
   <section class="main-sec">
     <div class="container d-flex flex-row justify-content-start">
       <!-- ======= post page section start -->
@@ -668,6 +674,7 @@
       </div>
     </div>
   </section>
+  <!--======================== content section ======================= -->
   <section style="height: 900px;"></section>
 
 
