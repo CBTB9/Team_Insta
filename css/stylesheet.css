@@ -74,7 +74,17 @@ span.number-count {
     --primary-color: black;
     --secondary-color: white;
     --dark-color: gray;
-    --border-color: rgb(18, 18, 18, 1);
+    --border-color: rgb(54 54 54);
+    --visited-color: rgb(224, 241, 255);
+    --links-color:#0095f6;
+
+    /* gradient color */
+    --gradient-lavender:rgb( 211, 0, 197);
+    --gradient-orange: rgb(255, 122, 0);
+    --gradient-pink: rgb(255, 1, 105);
+    --gradient-purple: rgb(118, 56, 250);
+    --gradient-red: rgb(255, 48, 64);
+    --gradient-yellow: rgb(255, 214, 0);
     /* background: linear-gradient(circle, rgb(238 1 142), rgb(254 123 11), rgb(87 9 28)); */
 }
 
@@ -150,8 +160,9 @@ ul li {
     object-fit: cover;
     border-radius: 50%;
 }
+
 /* offcanvas */
-.offcanvas-start.show{
+.offcanvas-start.show {
     left: 4%;
 }
 
