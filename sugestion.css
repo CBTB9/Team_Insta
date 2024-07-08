@@ -7,7 +7,9 @@
 a {
     text-decoration: none;
 }
+.suggested-sec{
 
+}
 .head-sugg {
     display: flex;
     bottom: 16px;
@@ -24,15 +26,23 @@ a {
     width: 40px;
     color: #0095f6;
 }
+
+/* carousels */
+.carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    width: auto !important;
+}
 .cards-suggestions{
     gap: 12px;
     flex-wrap: wrap;
 }
 
-.card {
+.card-suggestion {
     position: relative;
     width: 168.22px;
-    height: 244px;
+    height: auto;
     background: black;
     border: 1px solid rgb(54 54 54);
 }
