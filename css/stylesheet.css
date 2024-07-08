@@ -175,7 +175,7 @@ ul li {
 /* content section */
 .main-sec {
     max-width: auto;
-    width: 100%;
+    margin-left: 15vmax;
     height: 100vh;
     /* background-color: var(--dark-color); */
     border-right: 0.5px solid rgb(122, 122, 122);
