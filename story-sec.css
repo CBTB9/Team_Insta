@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.story-card{
+    width: 64px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 84px;
+}
+.back-linear{
+    position: relative;
+    width: 66px;
+    height: 66px;
+    background: linear-gradient(to bottom right, rgb(255, 1, 105), rgb( 211, 0, 197), rgb(255, 48, 64), rgb(255, 214, 0,),rgb(255, 122, 0));
+    border-radius: 50%;
+}
+.back-linear img{
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
