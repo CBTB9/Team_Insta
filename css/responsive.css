@@ -1,6 +1,8 @@
 /*=========== media quiry for min 1269px ============= */
 @media (min-width: 1265px) {
-    
+    .card {
+        height: 850px !important;
+    }
 }
 
 /* media quiry for large divices */
@@ -9,6 +11,10 @@
     /* navbar section  */
     .navbar-sec {
         max-width: 7vmax !important;
+    }
+
+    .content-main-1 {
+        margin-left: 7vmax !important;
     }
 
     /* instagram/logo of insta */
@@ -33,9 +39,13 @@
         display: none;
     }
 
+    .card {
+        height: 800px !important;
+    }
+
     /*====== navbar end======= */
     /* content section */
-   
+
     .sugested-sec {
         margin-left: 0;
     }
@@ -48,6 +58,10 @@
     /* navbar section  */
     .navbar-sec {
         max-width: 7vmax !important;
+    }
+
+    .content-main-1 {
+        margin-left: 7vmax !important;
     }
 
     .insta-name {
@@ -70,6 +84,10 @@
     /* icons details/ only icons */
     .i-d {
         display: none;
+    }
+
+    .card {
+        height: 750px !important;
     }
 
     /* sugested for you section */
@@ -135,7 +153,13 @@
     .main-sec .container {
         padding: 0 !important;
     }
-
+    .content-main-1 {
+        margin: 0 !important;
+        border: none;
+    }
+.story-card{
+    margin-top: 1000px;
+}
     .main-sec {
         padding-top: 90px;
     }
@@ -145,9 +169,19 @@
         padding: 0 !important;
         width: 100%;
     }
+    
+    .post-sec {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100%;
+    }
 
     .post .card {
         width: 100% !important;
+    }
+
+    .card {
+        height: 750px !important;
     }
 
     .sugested-sec {
@@ -212,8 +246,17 @@
         padding: 0 !important;
     }
 
+    .content-main-1 {
+        margin: 0 !important;
+        border: none !important;
+    }
+    .card{
+        max-width: 600px;
+    }
+
     .main-sec {
         padding-top: 90px;
+        justify-content: end;
     }
 
     .post-sec {
@@ -222,8 +265,22 @@
         width: 100%;
     }
 
+    .post_btn_mob {
+        margin-left: 5px;
+    }
+
+    .card {
+        height: 750px !important;
+        padding: 0 !important;
+    }
+
     .post .card {
         width: 100% !important;
+    }
+
+    /* suggestion card section in post section */
+    .suggested-sec {
+        display: none !important;
     }
 
     .sugested-sec {
