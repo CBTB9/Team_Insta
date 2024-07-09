@@ -32,6 +32,16 @@ setTimeout(() => {
   
 // end
 
+// suggestion scroll carosel
+
+        function scrolll() {
+            let left = document.querySelector(".scroll-images");
+            left.scrollBy(350, 0)
+        }
+        function scrollr() {
+            let right = document.querySelector(".scroll-images");
+            right.scrollBy(-350, 0)
+        }
 // ====== like btn ======
 document.addEventListener('DOMContentLoaded', function() {
     // Select all like buttons
