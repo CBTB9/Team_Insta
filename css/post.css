@@ -7,11 +7,12 @@
 
 .post-sec {
     display: flex;
-    position: sticky;
+    max-width: 630px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: auto;
+    margin: 16px 0 0 0;
     background: black;
 }
 
@@ -22,8 +23,8 @@ a {
 
 .card {
     position: relative;
-    width: 360px;
-    height: 95vh;
+    width: 500px;
+    height: fit-content;
     background: #000000;
     box-shadow: 15px 15px 60px rgba(108, 108, 108, 0.15);
     padding: 20px;
@@ -81,6 +82,7 @@ a {
     max-width: auto;
     width: 100%;
     max-height: 500px;
+    background-size: cover;
     height: 100%;
     margin: 10px 0 15px;
     border: 1px solid var(--border-color);
@@ -138,7 +140,6 @@ a {
     display: flex;
     align-items: center;
     margin-top: 15px;
-    margin: auto 10px;
 }
 
 .addcomments .userImg {
