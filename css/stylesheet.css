@@ -173,10 +173,15 @@ ul li {
 }
 
 /* content section */
-.main-sec {
-    max-width: auto;
+.content-main-1{
     margin-left: 15vmax;
-    height: 100vh;
+}
+.main-sec {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    /* height: 100vh; */
     /* background-color: var(--dark-color); */
     border-right: 0.5px solid rgb(122, 122, 122);
 }
@@ -196,9 +201,44 @@ ul li {
 /*content-sec> post-sec */
 
 
-/*content-sec> sugested sec */
+/*content-sec> sugested for you sec */
 .sugested-sec {
-    padding-left: 4rem;
-    max-width: 26.5vmax;
+    margin: 0;
+    max-width: 383px;
     width: 100%;
+}
+.card-foryou{
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+}
+.profile-foryou{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.image-foryou{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.name-foryou{
+    width: 183px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    gap: 2px;
+}
+.name-foryou p{
+    font-size: 14px;
+    line-height: 0.2px;
+}
+.switch-btn{
+    font-size: 12px;
+    color: var(--links-color);
+    background-color: none;
 }
