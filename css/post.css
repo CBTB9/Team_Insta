@@ -7,7 +7,6 @@
 
 .post-sec {
     display: flex;
-    max-width: 630px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
