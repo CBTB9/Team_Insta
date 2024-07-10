@@ -173,16 +173,17 @@ ul li {
 }
 
 /* content section */
-.content-main-1{
-    margin-left: 15vmax;
-}
+/* .content-main-1{
+   
+} */
 .main-sec {
     display: flex;
     flex-direction: row;
+    position: sticky;
     justify-content: center;
+    align-items: center;
     margin: auto;
-    /* height: 100vh; */
-    /* background-color: var(--dark-color); */
+    margin-left: 15vmax;
     border-right: 0.5px solid rgb(122, 122, 122);
 }
 
