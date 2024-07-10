@@ -13,7 +13,7 @@
         max-width: 7vmax !important;
     }
 
-    .content-main-1 {
+    .main-sec {
         margin-left: 7vmax !important;
     }
 
@@ -60,7 +60,7 @@
         max-width: 7vmax !important;
     }
 
-    .content-main-1 {
+    .main-sec {
         margin-left: 7vmax !important;
     }
 
@@ -153,23 +153,14 @@
     .main-sec .container {
         padding: 0 !important;
     }
-    .content-main-1 {
-        margin: 0 !important;
+    .main-sec {
+        margin-left: 0 !important;
         border: none;
     }
-.story-card{
-    margin-top: 1000px;
-}
     .main-sec {
         padding-top: 90px;
     }
-
-    .post-sec {
-        margin: 0 !important;
-        padding: 0 !important;
-        width: 100%;
-    }
-    
+ 
     .post-sec {
         margin: 0 !important;
         padding: 0 !important;
@@ -177,7 +168,7 @@
     }
 
     .post .card {
-        width: 100% !important;
+        width: 100%;
     }
 
     .card {
@@ -246,7 +237,7 @@
         padding: 0 !important;
     }
 
-    .content-main-1 {
+    .main-sec {
         margin: 0 !important;
         border: none !important;
     }
@@ -256,7 +247,6 @@
 
     .main-sec {
         padding-top: 90px;
-        justify-content: end;
     }
 
     .post-sec {
