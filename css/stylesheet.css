@@ -140,7 +140,7 @@ ul li {
 
 .nav-item:hover {
     background: var(--border-color);
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .navbar-item {
@@ -173,18 +173,15 @@ ul li {
 }
 
 /* content section */
-/* .content-main-1{
-   
-} */
+.content-main-1{
+    margin-left: 15vmax;
+}
 .main-sec {
     display: flex;
     flex-direction: row;
     position: sticky;
     justify-content: center;
-    align-items: center;
     margin: auto;
-    margin-left: 15vmax;
-    border-right: 0.5px solid rgb(122, 122, 122);
 }
 
 /* like btn */
@@ -203,21 +200,29 @@ ul li {
 
 
 /*content-sec> sugested for you sec */
-.sugested-sec {
-    margin: 0;
+.sugested-foryou-main{
+    padding-left: 64px;
+    display: flex;
+    flex-direction: column;
+}
+.sugested-foryou-sec{
+    /* margin: 0; */
     max-width: 383px;
     width: 100%;
 }
-.card-foryou{
+.your-profile{
     width: 100%;
     height: 100%;
-    padding: 16px;
     display: flex;
+    padding: 16px 4px;
     justify-content:center;
     flex-direction: row;
+    align-items: center;
 }
 .profile-foryou{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
     gap: 5px;
 }
@@ -228,18 +233,92 @@ ul li {
     object-fit: cover;
 }
 .name-foryou{
-    width: 183px;
+    width: 200px;
+    padding-left: 5px;
     display: flex;
     margin: auto;
     flex-direction: column;
     gap: 2px;
 }
-.name-foryou p{
+.name-foryou .names{
     font-size: 14px;
-    line-height: 0.2px;
+    line-height: 16px;
+}
+.sug-fo-you-sp{
+    font-size: 12px;
+    color: #a8a8a8;
 }
 .switch-btn{
     font-size: 12px;
     color: var(--links-color);
     background-color: none;
+}
+/* sugested for you secnod div >*/
+/* first div >*/
+.suges-heading{
+    padding: 8px 16px;
+    width: 100%;
+    height: 29px;
+}
+/* >first div */
+.heading-1{
+    width: 260px;
+    padding: 0.1px 10px;
+    font-size: 14px;
+    color: #a8a8a8;
+}
+/* >second div*/
+.see-all{
+    font-size: 12px;
+    color: #f5f5f5;
+}
+/* second div> */
+.suges-card-foryou{
+display: flex;
+flex-direction: column;
+padding: 4px 0;
+}
+/* cards for you  */
+.card-foryou{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 8px 0;
+    justify-content:center;
+    flex-direction: row;
+    align-items: center;
+}
+/* last div footer */
+/* policies */
+.policies{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+/* spans  */
+.spans ul{
+    margin-bottom: 1px;
+}
+.spans ul li{
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    color: #a8a8a8;
+    gap: 10px;
+
+}
+.li-gap{
+    gap: 8px;
+}
+/* last copy right */
+.copy-right{
+    font-size: 12px;
+    color: #a8a8a8;
+    padding: 4px 20px;
+}
+.copy-right p{
+    padding: 2px 11px;
 }
