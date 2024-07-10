@@ -13,7 +13,7 @@
         max-width: 7vmax !important;
     }
 
-    .main-sec {
+    .content-main-1 {
         margin-left: 7vmax !important;
     }
 
@@ -60,7 +60,7 @@
         max-width: 7vmax !important;
     }
 
-    .main-sec {
+    .content-main-1{
         margin-left: 7vmax !important;
     }
 
@@ -94,7 +94,9 @@
     .sugested-sec {
         display: none;
     }
-
+    .sugested-foryou-main {
+        display: none !important;
+    }
     /* sidebar width */
 
 }
@@ -153,9 +155,8 @@
     .main-sec .container {
         padding: 0 !important;
     }
-    .main-sec {
+    .content-main-1 {
         margin-left: 0 !important;
-        border: none;
     }
     .main-sec {
         padding-top: 90px;
@@ -178,10 +179,13 @@
     .sugested-sec {
         display: none;
     }
+    .sugested-foryou-main {
+        display: none !important;
+    }
 
 }
 
-@media (max-width: 576px) and (min-width: 360px) {
+@media (max-width: 576px) and (min-width: 220px) {
     .navbar-sec {
         display: none !important;
     }
@@ -237,9 +241,8 @@
         padding: 0 !important;
     }
 
-    .main-sec {
+    .content-main-1 {
         margin: 0 !important;
-        border: none !important;
     }
     .card{
         max-width: 600px;
@@ -273,8 +276,8 @@
         display: none !important;
     }
 
-    .sugested-sec {
-        display: none;
+    .sugested-foryou-main {
+        display: none !important;
     }
 
 }
