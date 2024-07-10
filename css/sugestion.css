@@ -147,7 +147,7 @@ right: 25%;
     left: 9px;
 }
 
-.card-suggestion .name-su-ca {
+span .name-su-ca {
     margin: auto;
     font-size: 14px !important;
     color: #f5f5f5 !important;
