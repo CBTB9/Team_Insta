@@ -322,3 +322,10 @@ padding: 4px 0;
 .copy-right p{
     padding: 2px 11px;
 }
+
+/* reels section */
+iframe {
+    width: 100%;
+    height: calc(100vh - 2px); /* Adjust based on navbar height */
+    border: none;
+}

@@ -45,14 +45,13 @@
         <a class="navbar-brand my-4 ms-0 px-3" href="#"><span class="insta-logo"></span><img class="insta-name"
             src="assets/svg/logo.svg" alt="" srcset=""></a>
         <li class="nav-item">
-          <a class="nav-link navbar-item active" aria-current="page" href="#"><img src="assets/svg/home.svg" alt=""
-              srcset=""><span class="i-d">Home</span></a>
+          <a class="nav-link navbar-item active" id="home" aria-current="page" href="#"><img src="assets/svg/home.svg"
+              alt="" srcset=""><span class="i-d">Home</span></a>
         </li>
         <!-- offcanvas search -->
-        <li class="nav-item " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-          aria-controls="offcanvasExample">
-          <a href="#" class="nav-link navbar-item"><img src="assets/svg/search.svg" alt="img">
-            <span class="i-d">Search</span></a>
+        <li class="nav-item">
+          <a class="nav-link navbar-item active" id="home" aria-current="page" href="#"><img src="assets/svg/search.svg"
+              alt="" srcset=""><span class="i-d">Search</span></a>
         </li>
         <!-- offcanvas serach end -->
         <li class="nav-item">
@@ -60,8 +59,8 @@
               class="i-d">Explore</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link navbar-item" aria-disabled="true"><img src="assets/svg/reels.svg" alt="" srcset=""><span
-              class="i-d">Reels</span></a>
+          <a class="nav-link navbar-item" id="loadReels" aria-disabled="true"><img class="reelBtn"
+              src="assets/svg/reels.svg" alt="" srcset=""><span class="i-d">Reels</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link navbar-item" aria-disabled="true"><img src="assets/svg/messages.svg" alt="" srcset=""><span
@@ -156,7 +155,7 @@
   <!-- navbar section end -->
 
   <!--========================= content section start =================-->
-  <div class="content-main-1">
+  <div class="content-main-1" id="content-main-1">
     <section class="main-sec">
       <div class=" d-flex justify-content-center">
         <!-- ======= post page section start -->
@@ -998,12 +997,18 @@
   <!--======================== content section ======================= -->
 
 
-
   <!-- custom js link -->
   <script src="js/insta.js"></script>
   <!-- bootstrape js link -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
