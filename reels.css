@@ -11,10 +11,28 @@ li {
 a {
     text-decoration: none;
 }
+/* navbar */
+::-webkit-scrollbar {
+    display: none;
+}
 
+::-webkit-scrollbar-track {
+    background-color: gray;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+}
+
+/* all-reels */
+.all-reels{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 /* reels main sec */
 .main-reels-sec {
-    margin-left: 15vmax;
+    margin: 2% auto;
 
 }
 
@@ -22,23 +40,31 @@ a {
 .reels-content-sec {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: auto;
+    align-items: end;
+    gap: 15px;
 }
 
 /* reels card */
 .reels-card {
     position: relative;
     max-width: 500px;
+    object-fit: cover;
     width: 100%;
     justify-content: center;
-    margin: auto;
-    height: 90%;
+    max-height: 90%;
 }
 
 /* reels card image */
 .reels-card img {
     width: 500px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+}
+.reels-card video {
+    width: 500px;
+    height: auto;
+    object-fit: contain;
     border-radius: 10px;
 }
 
@@ -77,6 +103,8 @@ a {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    width: 83%;
+    align-items: self-start;
     gap: 20px;
     bottom: 1%;
     left: 8%;
@@ -126,7 +154,7 @@ a {
 /* play btn */
 .reels-card .play-btn {
     position: absolute;
-    top: 50%;
+    bottom:  50%;
     left: 40%;
 }
 
@@ -140,6 +168,7 @@ a {
 
 .reels-card .play-btn .play-main img {
     width: 24px;
+    height: 24px;
     position: absolute;
     top: 35%;
     left: 35%;
@@ -147,8 +176,12 @@ a {
 
 /* actions btns */
 .reels-content-sec .actions-btns-main{
+    margin-left: 0;
+}
+.reels-content-sec .actions-btns-main .action-btns{
     display: flex;
     flex-direction: column;
+    gap: 20px;
 
 }
 .reels-content-sec .actions-btns-main .action-btns .like-sec{
@@ -168,4 +201,4 @@ a {
     width: 24px;
     border: 1px solid rgb(94, 94, 94);
     border-radius: 5px;
-}
+} 
