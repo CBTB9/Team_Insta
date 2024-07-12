@@ -5,9 +5,9 @@
 }
 
 /* ================= */
-#content-main-1{
+/* #content-main-1{
     margin-left: 7vmax;
-}
+} */
 .main-sec {
     display: flex;
     flex-direction: row;
