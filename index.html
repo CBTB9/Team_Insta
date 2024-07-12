@@ -45,8 +45,9 @@
         <a class="navbar-brand my-4 ms-0 px-3" href="#"><span class="insta-logo"></span><img class="insta-name"
             src="assets/svg/logo.svg" alt="" srcset=""></a>
         <li class="nav-item">
-          <a class="nav-link navbar-item active" id="home" aria-current="page" href="#"><img src="assets/svg/home.svg"
-              alt="" srcset=""><span class="i-d">Home</span></a>
+          <a class="nav-link navbar-item active" onclick="loadContent('home.html')" id="home" aria-current="page"
+            href="#"><img onclick="loadContent('home.html')" src="assets/svg/home.svg" alt="" srcset=""><span
+              class="i-d">Home</span></a>
         </li>
         <!-- offcanvas search -->
         <li class="nav-item">
@@ -55,15 +56,18 @@
         </li>
         <!-- offcanvas serach end -->
         <li class="nav-item">
-          <a class="nav-link navbar-item" href="#"><img src="assets/svg/Explor.svg" alt="" srcset=""><span
+          <a class="nav-link navbar-item" onclick="loadContent('explore.html')" href="#"><img
+              onclick="loadContent('explore.html')" src="assets/svg/Explor.svg" alt="" srcset=""><span
               class="i-d">Explore</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link navbar-item" id="loadReels" aria-disabled="true"><img class="reelBtn"
-              src="assets/svg/reels.svg" alt="" srcset=""><span class="i-d">Reels</span></a>
+          <a class="nav-link navbar-item" onclick="loadContent('reels.html')" id="loadReels" aria-disabled="true"><img
+              class="reelBtn" onclick="loadContent('reels.html')" src="assets/svg/reels.svg" alt="" srcset=""><span
+              class="i-d">Reels</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link navbar-item" aria-disabled="true"><img src="assets/svg/messages.svg" alt="" srcset=""><span
+          <a class="nav-link navbar-item" onclick="loadContent('messagebox.html')" aria-disabled="true"><img
+              onclick="loadContent('messagebox.html')" src="assets/svg/messages.svg" alt="" srcset=""><span
               class="i-d">Messages</span></a>
         </li>
         <li class="nav-item">
@@ -71,19 +75,21 @@
               srcset=""><span class="i-d">Notifications</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link navbar-item" aria-disabled="true"><img src="assets/svg/creat.svg" alt="" srcset=""><span
+          <a class="nav-link navbar-item" onclick="loadContent('create.html')" aria-disabled="true"><img
+              onclick="loadContent('create.html')" src="assets/svg/creat.svg" alt="" srcset=""><span
               class="i-d">Create</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link  d-flex align-center" aria-disabled="true"><img class="pro-img"
-              src="assets/images/IMG-20240418-WA0007 (2).jpg" alt="" srcset=""><span
-              class="i-d mt-1 ms-1">Profile</span></a>
+          <a class="nav-link  d-flex align-center" onclick="loadContent('profile.html')" aria-disabled="true"><img
+              class="pro-img" onclick="loadContent('profile.html')" src="assets/images/IMG-20240418-WA0007 (2).jpg"
+              alt="" srcset=""><span class="i-d mt-1 ms-1">Profile</span></a>
         </li>
       </ul>
       <ul class="navbar-nav d-flex flex-column nav-main justify-content-start">
         <!-- last thread and more option -->
         <li class="nav-item nav-item-space">
-          <a class="nav-link navbar-item" aria-disabled="true"><img src="assets/svg/Treads.svg" alt="" srcset=""><span
+          <a class="nav-link navbar-item" onclick="loadContent('threads.html')" aria-disabled="true"><img
+              onclick="loadContent('threads.html')" src="assets/svg/Treads.svg" alt="" srcset=""><span
               class="i-d">Threads</span></a>
         </li>
         <li class="nav-item">
@@ -97,7 +103,8 @@
   <!-- ==============navbar for mobile devices start =================-->
   <div class="row-gap-5">
     <nav class="container-fluid navbar navbar-expand mob-t-nav d-none bg-body-dark " data-bs-theme="dark">
-      <a class="navbar-brand" href="#"><img class="insta-name px-2" src="assets/svg/logo.svg" alt="" srcset="">
+      <a class="navbar-brand" href="#"><img onclick="loadContent('home.html')" class="insta-name px-2"
+          src="assets/svg/logo.svg" alt="" srcset="">
         <span class="dropdown p-0 ms-0 mt-0 ">
           <a class="btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img
               src="/Instagram-/assets/svg/dropdown.svg" alt="">
@@ -127,30 +134,32 @@
   <div class="container-fluid mob-b-nav d-none">
     <ul class="navbar-nav d-flex flex-row justify-content-start">
       <li class="nav-item mob-i-m">
-        <a class="nav-link active" aria-current="page" href="#"><img src="assets/svg/home.svg" alt="" srcset=""><span
-            class="i-d"></span></a>
+        <a class="nav-link active" aria-current="page" href="#"><img onclick="loadContent('home.html')"
+            src="assets/svg/home.svg" alt="" srcset=""><span class="i-d"></span></a>
       </li>
       <li class="nav-item mob-i-m">
-        <a class="nav-link" href="#"><img src="assets/svg/Explor.svg" alt="" srcset=""><span class="i-d"></span></a>
+        <a class="nav-link" href="#"><img onclick="loadContent('explore.html')" src="assets/svg/Explor.svg" alt=""
+            srcset=""><span class="i-d"></span></a>
       </li>
       <li class="nav-item mob-i-m">
-        <a class="nav-link" aria-disabled="true"><img src="assets/svg/reels.svg" alt="" srcset=""><span
-            class="i-d"></span></a>
+        <a class="nav-link" aria-disabled="true"><img onclick="loadContent('reels.html')" src="assets/svg/reels.svg"
+            alt="" srcset=""><span class="i-d"></span></a>
       </li>
       <li class="nav-item mob-i-m">
-        <a class="nav-link" aria-disabled="true"><img src="assets/svg/creat.svg" alt="" srcset=""><span
-            class="i-d"></span></a>
+        <a class="nav-link" aria-disabled="true"><img onclick="loadContent('create.html')" src="assets/svg/creat.svg"
+            alt="" srcset=""><span class="i-d"></span></a>
       </li>
       <li class="nav-item mob-i-m">
-        <a class="nav-link" aria-disabled="true"><img src="assets/svg/messages.svg" alt="" srcset=""><span
-            class="i-d"></span></a>
+        <a class="nav-link" aria-disabled="true"><img onclick="loadContent('messagebox.html')"
+            src="assets/svg/messages.svg" alt="" srcset=""><span class="i-d"></span></a>
       </li>
       <li class="nav-item mob-i-m">
-        <a class="nav-link" aria-disabled="true"><img class="pro-img" src="assets/images/IMG-20240418-WA0007 (2).jpg"
-            alt="" srcset=""></a>
+        <a class="nav-link" aria-disabled="true"><img class="pro-img" onclick="loadContent('profile.html')"
+            src="assets/images/IMG-20240418-WA0007 (2).jpg" alt="" srcset=""></a>
       </li>
     </ul>
   </div>
+  
   <!-- ======================== navbar mobile exit ========================== -->
   <!-- navbar section end -->
 
