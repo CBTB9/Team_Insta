@@ -76,25 +76,23 @@ function favourite() {
   }
 }
 // ====================== reels section lo0aded ======
-let homeContent = document.getElementById('content-main-1').innerHTML;
-let reel = document.querySelector((".reelBtn"));
-reel.src.match("assets/svg/reels.svg");
-document.getElementById('loadReels').addEventListener('click', function () {
-  let content = document.getElementById('content-main-1');
-  content.innerHTML = '<iframe src="reels.html"></iframe>'
-  reel.src = "assets/svg/activereels.svg"
+function loadContent(File) {
+  fetch(File)
+  .then(Response => Response.text())
+  .then(data => {
+    document.getElementById('content-main-1').innerHTML = data;
+  })
+  .catch(error => console.error('Error loading content', error));
+}
+// ============ message attach on navbar =============
 
+// for scrollbar working
+const scrollbar = document.getElementsByClassName('all-chat-user-deatail');
+
+scrollbar.addEventListener('mouseover', () => {
+  scrollbar.style.overflow = 'scroll';
 });
 
-document.getElementById('home').addEventListener('click', function () {
-  let content = document.getElementById('content-main-1');
-  content.innerHTML = homeContent;
-  reel.src = "assets/svg/reels.svg"
-
-  // reatach reel
-  document.getElementById('loadReels').addEventListener('click', function () {
-    let content = document.getElementById('content-main-1');
-    content.innerHTML = '<iframe src="reels.html"></iframe>'
-
-  });
+scrollbar.addEventListener('mouseout', () => {
+  scrollbar.style.overflow = 'hiden';
 });
