@@ -26,10 +26,6 @@
         margin: auto auto auto 1rem !important;
     }
 
-    .navbar-sec .nav-item-space {
-        margin: auto auto auto 0.4rem !important;
-    }
-
     .insta-logo {
         content: url(/assets/svg/instalogo.svg);
     }
@@ -72,13 +68,8 @@
         margin: auto auto auto 1rem !important;
     }
 
-    .navbar-sec .nav-item-space {
-        margin: auto auto auto 0.4rem !important;
-    }
-
     .insta-logo {
         content: url(/assets/svg/instalogo.svg);
-        margin: 0 auto auto 0.9rem;
     }
 
     /* icons details/ only icons */
