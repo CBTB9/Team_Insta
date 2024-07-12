@@ -1,0 +1,274 @@
+/*=========== media quiry for min 1269px ============= */
+@media (min-width: 1265px) {
+    .card {
+        height: 850px !important;
+    }
+}
+
+/* media quiry for large divices */
+@media (min-width:1161px) and (max-width:1264px) {
+
+    /* navbar section  */
+    .navbar-sec {
+        max-width: 7vmax !important;
+    }
+
+    .content-main-1 {
+        margin-left: 7vmax !important;
+    }
+
+    /* instagram/logo of insta */
+    .insta-name {
+        display: none;
+    }
+
+    .navbar-sec .nav-item {
+        margin: auto auto auto 1rem !important;
+    }
+
+    .insta-logo {
+        content: url(/assets/svg/instalogo.svg);
+    }
+
+    /* icons details/ only icons */
+    .i-d {
+        display: none;
+    }
+
+    .card {
+        height: 800px !important;
+    }
+
+    /*====== navbar end======= */
+    /* content section */
+
+    .sugested-sec {
+        margin-left: 0;
+    }
+
+}
+
+/*===== media quiry for large divice max width 1160px =======*/
+@media (max-width: 1160px) and (min-width: 769px) {
+
+    /* navbar section  */
+    .navbar-sec {
+        max-width: 7vmax !important;
+    }
+
+    .content-main-1{
+        margin-left: 7vmax !important;
+    }
+
+    .insta-name {
+        display: none;
+    }
+
+    .navbar-sec .nav-item {
+        margin: auto auto auto 1rem !important;
+    }
+
+    .insta-logo {
+        content: url(/assets/svg/instalogo.svg);
+    }
+
+    /* icons details/ only icons */
+    .i-d {
+        display: none;
+    }
+
+    .card {
+        height: 750px !important;
+    }
+
+    /* sugested for you section */
+    .sugested-sec {
+        display: none;
+    }
+    .sugested-foryou-main {
+        display: none !important;
+    }
+    /* sidebar width */
+
+}
+
+/*======== media quirey for for mobile devices 767px ========= */
+@media (max-width: 768px) and (min-width: 577px) {
+    .navbar-sec {
+        display: none !important;
+    }
+
+    .mob-t-nav {
+        display: flex !important;
+        position: fixed;
+        width: 100%;
+        justify-content: space-between;
+        top: 0;
+        z-index: 999;
+        border-bottom: 1px solid rgb(122, 122, 122);
+        background-color: black;
+    }
+
+
+
+    .search-m {
+        display: flex !important;
+        padding: 0;
+    }
+
+    .nav-item form img {
+        margin-top: 8px !important;
+    }
+
+    .nav-item {
+        padding: 5px 15px !important;
+    }
+
+    /* navbar bottom on mobile screen */
+    .mob-b-nav {
+        display: flex !important;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 999;
+        border-top: 1px solid rgb(122, 122, 122);
+        background-color: black;
+    }
+
+    .mob-b-nav ul {
+        width: 100%;
+        display: flex !important;
+        justify-content: space-evenly !important;
+        align-items: center;
+    }
+
+    /* content main section */
+    .main-sec .container {
+        padding: 0 !important;
+    }
+    .content-main-1 {
+        margin-left: 0 !important;
+    }
+    .main-sec {
+        padding-top: 90px;
+    }
+ 
+    .post-sec {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100%;
+    }
+
+    .post .card {
+        width: 100%;
+    }
+
+    .card {
+        height: 750px !important;
+    }
+
+    .sugested-sec {
+        display: none;
+    }
+    .sugested-foryou-main {
+        display: none !important;
+    }
+
+}
+
+@media (max-width: 576px) and (min-width: 220px) {
+    .navbar-sec {
+        display: none !important;
+    }
+
+    .mob-t-nav {
+        display: flex !important;
+        position: fixed;
+        width: 100%;
+        justify-content: space-between;
+        top: 0;
+        z-index: 999;
+        border-bottom: 1px solid rgb(122, 122, 122);
+        background-color: black;
+    }
+
+    .nav-item input {
+        display: none !important;
+    }
+
+    .search-m {
+        display: flex !important;
+        padding: 0;
+    }
+
+    .nav-item form img {
+        margin-top: 8px !important;
+    }
+
+    .nav-item {
+        padding: 5px 15px !important;
+    }
+
+    /* navbar bottom on mobile screen */
+    .mob-b-nav {
+        display: flex !important;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 999;
+        border-top: 1px solid rgb(122, 122, 122);
+        background-color: black;
+    }
+
+    .mob-b-nav ul {
+        width: 100%;
+        display: flex !important;
+        justify-content: space-evenly !important;
+        align-items: center;
+    }
+
+    /* content main section */
+    .main-sec .container {
+        padding: 0 !important;
+    }
+
+    .content-main-1 {
+        margin: 0 !important;
+    }
+    .card{
+        max-width: 600px;
+    }
+
+    .main-sec {
+        padding-top: 90px;
+    }
+
+    .post-sec {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100%;
+    }
+
+    .post_btn_mob {
+        margin-left: 5px;
+    }
+
+    .card {
+        height: 750px !important;
+        padding: 0 !important;
+    }
+
+    .post .card {
+        width: 100% !important;
+    }
+
+    /* suggestion card section in post section */
+    .suggested-sec {
+        display: none !important;
+    }
+
+    .sugested-foryou-main {
+        display: none !important;
+    }
+
+}
