@@ -137,10 +137,20 @@ ul li {
     justify-content: center;
     gap: 20px;
 }
-
-.nav-item:hover {
-    background: var(--border-color);
+.nav-item{
+    padding: 0 0 0 16px;
+}
+.nav-item a{
+    padding:4px;
     border-radius: 10px;
+    width: 90%;
+
+}
+.nav-item a:hover {
+    background: var(--border-color);
+}
+.thread:hover{
+    background-image: url(/assets/svg/treadsvisit.svg);
 }
 
 .navbar-item {
@@ -149,7 +159,7 @@ ul li {
     flex-direction: row;
     align-items: center;
     gap: 20px;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .pro-img {
@@ -164,12 +174,6 @@ ul li {
 /* offcanvas */
 .offcanvas-start.show {
     left: 4%;
-}
-
-/* last two nav item more */
-.nav-item-space {
-    padding: 0;
-    margin: 0 !important;
 }
 
 /* content section */
