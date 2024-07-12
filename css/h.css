@@ -290,14 +290,6 @@ img {
   }
 }
 
-/* Spinner Animation */
-
-@keyframes loader {
-  to {
-      transform: rotate(360deg);
-  }
-}
-
 /*
 
 The following code will only run if your browser supports CSS grid.
