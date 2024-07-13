@@ -11,6 +11,7 @@
     --border-color: rgb(54 54 54);
     --visited-color: rgb(224, 241, 255);
     --links-color:#0095f6;
+    --thread-navbar-mob-color: rgb(24 24 24 / 85%);
 
     /* gradient color */
     --gradient-lavender:rgb( 211, 0, 197);
@@ -32,7 +33,7 @@
     justify-content: space-between;
     margin: auto;
     width: 7vmax;
-    height: 90vh;
+    height: 100vh;
 
 }
 /* threads icon */
@@ -63,3 +64,11 @@
 }
 /* navbar end */
 
+/* navbar threads section */
+.content-main-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
