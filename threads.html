@@ -26,15 +26,15 @@
 </head>
 
 <body>
-<!-- navbar  -->
-    <section>
+    <!-- navbar  -->
+    <section class="sidebar-threads">
         <nav class=" threads-navbar-sec navbar-expand bg-body-dark " data-bs-theme="dark">
-            <a class="thread-navbar-brand" href="#"><img class="thread-name"
-                    src="assets/svg/threadsicon.svg" alt="" srcset=""></a>
+            <a class="thread-navbar-brand" href="#"><img class="thread-name" src="assets/svg/threadsicon.svg" alt=""
+                    srcset=""></a>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link"><img onclick="loadContent('home.html')"
-                         class="home-icon"   src="assets/svg/treadshome.svg" alt="" srcset=""></a>
+                    <a class="nav-link"><img onclick="loadContent('home.html')" class="home-icon"
+                            src="assets/svg/treadshome.svg" alt="" srcset=""></a>
                 </li>
                 <!-- offcanvas search -->
                 <li class="nav-item">
@@ -70,15 +70,27 @@
             </ul>
         </nav>
     </section>
-<!-- post section threads -->
- <div class="content-main-1" id="content-main-1">
-    <div class="main-thread">
-        <div class="d-flex post-section">
-
+    <!-- navbar for mobile divices -->
+     <!-- top nav -->
+    <div class="top-mob-thread d-none">
+        <div class="top-navbar">
+            <div class="empty-space"></div>
+            <div class="thread-logo"><img src="assets/svg/" alt=""></div>
+            <div class="more-top-nav"><img src="/assets/svg/More.svg" alt=""></div>
         </div>
     </div>
- </div>
- <!-- post section thread end -->
+    <!-- threads bottom nav -->
+    <!-- post section threads -->
+    <div class="content-main-1" id="content-main-1">
+        <div class="main-thread">
+            <div class="d-flex post-section">
+                <div class="card">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- post section thread end -->
 
     <!-- custom js link -->
     <script src="js/insta.js"></script>
