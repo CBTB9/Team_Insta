@@ -87,7 +87,6 @@
     height: 60px;
     justify-content: center;
     align-items: center;
-    
     margin: auto;
 }
 .content-main-1 .main-thread .foryou-post-sec .for-font{
@@ -107,4 +106,56 @@
     height: 12px;
    margin-left: 5px ;
     /* position: absolute; */
+}
+.content-main-1 .main-thread .post-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+}
+.content-main-1 .main-thread .post-section .second-main-thread{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+.content-main-1 .main-thread .post-section .second-main-thread .your-profile-start-thread{
+display: flex;
+flex-direction: column;
+padding: 0 24px;
+width: 100%;
+}
+.content-main-1 .main-thread .post-section .second-main-thread .your-profile-start-thread .main-pro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 0;
+
+}
+.second-main-thread .your-profile-start-thread .main-pro .left-pro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+.your-profile-start-thread .main-pro .left-pro .input-thread-sec .input-thread{
+background: transparent;
+border: none;
+outline: none;
+}
+.post-section .second-main-thread .your-profile-start-thread .main-pro .left-pro div img{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.your-profile-start-thread .main-pro .right-post{
+    font-size: 15px;
+    color: #f3f5f7;
+    font-weight: 700;
 }
