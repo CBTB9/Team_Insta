@@ -26,7 +26,7 @@
 </head>
 
 <body>
-    <!-- navbar  -->
+    <!-- ========= navbar start ==========-->
     <section class="sidebar-threads">
         <nav class=" threads-navbar-sec navbar-expand bg-body-dark " data-bs-theme="dark">
             <a class="thread-navbar-brand" href="#"><img class="thread-name" src="assets/svg/threadsicon.svg" alt=""
@@ -44,7 +44,7 @@
                 <!-- offcanvas serach end -->
                 <!-- notification section -->
                 <li class="nav-item">
-                    <a class="nav-link navbar-item" aria-disabled="true"><img src="assets/svg/notification.svg" alt=""
+                    <a class="nav-link navbar-item" aria-disabled="true"><img src="assets/svg/threadmobnotification.svg" alt=""
                             srcset=""></a>
                 </li>
                 <!-- user acount -->
@@ -71,18 +71,45 @@
         </nav>
     </section>
     <!-- navbar for mobile divices -->
-     <!-- top nav -->
+    <!-- top nav -->
     <div class="top-mob-thread d-none">
         <div class="top-navbar">
             <div class="empty-space"></div>
-            <div class="thread-logo"><img src="assets/svg/" alt=""></div>
+            <div class="thread-logo"><img src="/assets/svg/threadsicon.svg" alt=""></div>
             <div class="more-top-nav"><img src="/assets/svg/More.svg" alt=""></div>
         </div>
     </div>
     <!-- threads bottom nav -->
+    <div class="bottom-mob-thread d-none">
+        <div class="bottom-navbar">
+            <div class="m-b-ic"><img src="/assets/svg/treadshome.svg" alt=""></div>
+            <div class="m-b-ic"><img src="/assets/svg/search.svg" alt=""></div>
+            <div class="m-b-ic"><img src="/assets/svg/createthreads.svg" alt=""></div>
+            <div class="m-b-ic"><img src="/assets/svg/threadmobnotification.svg" alt=""></div>
+            <div class="m-b-ic"><img src="/assets/svg/useracount.svg" alt=""></div>
+        </div>
+    </div>
+    <!-- ========= navbar end =========== -->
     <!-- post section threads -->
     <div class="content-main-1" id="content-main-1">
         <div class="main-thread">
+            <!-- foryou top section start -->
+            <div class="foryou-post-sec">
+                <div><span class="for-font">For you</span></div>
+                <div class="toggle-btn">
+                    <img class="toggle-threads" src="/assets/svg/toggledropdown.svg" alt="">
+                </div>
+            </div>
+            <!-- top sec for mobile section -->
+            <div class="mob-top-foryou d-none">
+                <div class="foru-item">
+                    <div class="item-1"><span>For you</span></div>
+                </div>
+                <div class="foru-item">
+                    <div class="item-2"><span>Following</span></div>
+                </div>
+            </div>
+            <!-- top for you section end -->
             <div class="d-flex post-section">
                 <div class="card">
 
