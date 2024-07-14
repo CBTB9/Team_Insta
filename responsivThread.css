@@ -159,6 +159,9 @@
     .post-section{
         background: rgb(24 24 24);
     }
+    .content-main-1 .main-thread .post-section{
+        border-radius: 0 !important;
+    }
 
 }
 
@@ -250,6 +253,9 @@
         margin: 0 !important;
         padding: 0 !important;
         width: 100%;
+    }
+    .content-main-1 .main-thread .post-section{
+        border-radius: 0 !important;
     }
 
 }
