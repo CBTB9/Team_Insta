@@ -26,6 +26,7 @@
 #preloader img {
     width: 4%;
     margin: auto;
+
 }
 
 /* top preloader */
@@ -44,21 +45,13 @@
 .progress-bar {
     width: 0;
     height: 20px;
-    background: linear-gradient(40deg, rgb(239, 19, 96) 0%,
-            rgb(223, 85, 54) 80%,
-            rgb(230, 13, 20) 145%,
-            #c92222 100%);
+    background: linear-gradient(90deg, rgb(224, 9, 100) 65%,
+            rgb(240, 7, 85) 65%,
+            rgb(255, 3, 87) 5%);
     transition: 0.5s linear;
     display: flex;
     justify-content: flex-end;
     transform: translateY(0);
-}
-
-span.number-count {
-    font-size: 130px;
-    color: #fff;
-    padding-right: 50px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .height-0 {
@@ -76,10 +69,10 @@ span.number-count {
     --dark-color: gray;
     --border-color: rgb(54 54 54);
     --visited-color: rgb(224, 241, 255);
-    --links-color:#0095f6;
+    --links-color: #0095f6;
 
     /* gradient color */
-    --gradient-lavender:rgb( 211, 0, 197);
+    --gradient-lavender: rgb(211, 0, 197);
     --gradient-orange: rgb(255, 122, 0);
     --gradient-pink: rgb(255, 1, 105);
     --gradient-purple: rgb(118, 56, 250);
@@ -137,19 +130,23 @@ ul li {
     justify-content: center;
     gap: 20px;
 }
-.nav-item{
+
+.nav-item {
     padding: 0 0 0 16px;
 }
-.nav-item a{
-    padding:4px;
+
+.nav-item a {
+    padding: 4px;
     border-radius: 10px;
     width: 90%;
 
 }
+
 .nav-item a:hover {
     background: var(--border-color);
 }
-.thread:hover{
+
+.thread:hover {
     background-image: url(/assets/svg/treadsvisit.svg);
 }
 
@@ -172,14 +169,104 @@ ul li {
 }
 
 /* offcanvas */
-.offcanvas-start.show {
-    left: 4%;
+.offcanva{
+    position: fixed;
+    width: 397px;
+    left: -397px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    z-index: 1200;
+    background-color: black;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    border-left: none;
+    transition:left 0.01s ease;
+}
+.content{
+    padding: 12px;
+}
+.content .search-off{
+    font-size: 21px !important;
+    padding: 12px 16px 24px 16px;
+}
+.content .input{
+    padding: 12px 12px 0px 12px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .input .input-inner{
+    width: 100%;
+    padding: 8px 8px 12px 12px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    outline: none;
+    position: relative;
+}
+.content .input .cancel-svg{
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    right: 35px;
+    border-radius: 50%;
+    background: #f5f5f5;
+
+}
+.content .input .cancel-svg img{
+    width: 8px;
+   margin-top: -13px;
+   margin-left: 2.5px;
+   color: black;
+}
+.content .input .input-inner::placeholder{
+    color: #777;
+    font-size: 15px;
+}
+.content .off-hr{
+    width: 100%;
+}
+.overlay{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 77%;
+    height: 100%;
+    display: none;
+    z-index: 1300;
+}
+.overlay.showContent{
+    display: block;
+}
+.offcanva.showContent{
+    left: 3vmax;
+}
+/* sidebar content when offcanvas start */
+.navbar-sec.mwidth{
+    max-width: 7vmax;
+}
+.insta-name.full {
+    display: none ;
+}
+
+.insta-logo.iconShow {
+    content: url(/assets/svg/instalogo.svg);
+}
+
+.i-d.detail {
+    display: none;
 }
 
 /* content section */
-.content-main-1{
+.content-main-1 {
     margin-left: 15vmax;
 }
+
 .main-sec {
     display: flex;
     flex-direction: row;
@@ -204,39 +291,44 @@ ul li {
 
 
 /*content-sec> sugested for you sec */
-.sugested-foryou-main{
+.sugested-foryou-main {
     padding-left: 64px;
     display: flex;
     flex-direction: column;
 }
-.sugested-foryou-sec{
+
+.sugested-foryou-sec {
     /* margin: 0; */
     max-width: 383px;
     width: 100%;
 }
-.your-profile{
+
+.your-profile {
     width: 100%;
     height: 100%;
     display: flex;
     padding: 16px 4px;
-    justify-content:center;
+    justify-content: center;
     flex-direction: row;
     align-items: center;
 }
-.profile-foryou{
+
+.profile-foryou {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     gap: 5px;
 }
-.image-foryou{
+
+.image-foryou {
     width: 44px;
     height: 44px;
     border-radius: 50%;
     object-fit: cover;
 }
-.name-foryou{
+
+.name-foryou {
     width: 200px;
     padding-left: 5px;
     display: flex;
@@ -244,68 +336,79 @@ ul li {
     flex-direction: column;
     gap: 2px;
 }
-.name-foryou .names{
+
+.name-foryou .names {
     font-size: 14px;
     line-height: 16px;
 }
-.sug-fo-you-sp{
+
+.sug-fo-you-sp {
     font-size: 12px;
     color: #a8a8a8;
 }
-.switch-btn{
+
+.switch-btn {
     font-size: 12px;
     color: var(--links-color);
     background-color: none;
 }
+
 /* sugested for you secnod div >*/
 /* first div >*/
-.suges-heading{
+.suges-heading {
     padding: 8px 16px;
     width: 100%;
     height: 29px;
 }
+
 /* >first div */
-.heading-1{
+.heading-1 {
     width: 260px;
     padding: 0.1px 10px;
     font-size: 14px;
     color: #a8a8a8;
 }
+
 /* >second div*/
-.see-all{
+.see-all {
     font-size: 12px;
     color: #f5f5f5;
 }
+
 /* second div> */
-.suges-card-foryou{
-display: flex;
-flex-direction: column;
-padding: 4px 0;
+.suges-card-foryou {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 0;
 }
+
 /* cards for you  */
-.card-foryou{
+.card-foryou {
     width: 100%;
     height: 100%;
     display: flex;
     padding: 8px 0;
-    justify-content:center;
+    justify-content: center;
     flex-direction: row;
     align-items: center;
 }
+
 /* last div footer */
 /* policies */
-.policies{
+.policies {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     margin-bottom: 10px;
 }
+
 /* spans  */
-.spans ul{
+.spans ul {
     margin-bottom: 1px;
 }
-.spans ul li{
+
+.spans ul li {
     font-size: 12px;
     display: flex;
     flex-direction: column;
@@ -314,22 +417,26 @@ padding: 4px 0;
     gap: 10px;
 
 }
-.li-gap{
+
+.li-gap {
     gap: 8px;
 }
+
 /* last copy right */
-.copy-right{
+.copy-right {
     font-size: 12px;
     color: #a8a8a8;
     padding: 4px 20px;
 }
-.copy-right p{
+
+.copy-right p {
     padding: 2px 11px;
 }
 
 /* reels section */
 iframe {
     width: 100%;
-    height: calc(100vh - 2px); /* Adjust based on navbar height */
+    height: calc(100vh - 2px);
+    /* Adjust based on navbar height */
     border: none;
 }

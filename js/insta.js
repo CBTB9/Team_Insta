@@ -25,7 +25,6 @@ setTimeout(() => {
     } else {
       barwidth++;
       progressBar.style.width = barwidth + "%";
-      document.getElementById("incrementpercentage").innerHTML = barwidth + "%";
     }
   }
 }, 200);
@@ -78,21 +77,58 @@ function favourite() {
 // ====================== reels section lo0aded ======
 function loadContent(File) {
   fetch(File)
-  .then(Response => Response.text())
-  .then(data => {
-    document.getElementById('content-main-1').innerHTML = data;
-  })
-  .catch(error => console.error('Error loading content', error));
+    .then(Response => Response.text())
+    .then(data => {
+      document.getElementById('content-main-1').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading content', error));
 }
 // ============ message attach on navbar =============
 
 // for scrollbar working
-const scrollbar = document.getElementsByClassName('all-chat-user-deatail');
 
-scrollbar.addEventListener('mouseover', () => {
-  scrollbar.style.overflow = 'scroll';
-});
+// offcanvas for search bar
 
-scrollbar.addEventListener('mouseout', () => {
-  scrollbar.style.overflow = 'hiden';
+document.addEventListener("DOMContentLoaded", () => {
+  let openBtn = document.getElementById("openBtn");
+  let offcanva = document.getElementById('offcanva');
+  let overlay = document.getElementById("overlay");
+  let navSec = document.querySelectorAll('.navbar-sec');
+  let instalogo = document.getElementById('insta-logo');
+  let instaName = document.getElementById('insta-name');
+  let icDetail = document.querySelectorAll('.i-d');
+  let icSetteled = document.querySelectorAll('.nav-item')
+ 
+  openBtn.addEventListener('click', () => {
+    offcanva.classList.add('showContent');
+    overlay.classList.add('showContent');
+    instalogo.classList.add('iconShow');
+    instaName.classList.add('full');
+    navSec.forEach((nav)=>{
+      nav.classList.add('mwidth');
+    });
+   icDetail.forEach((icon)=>{
+      icon.classList.add('detail');
+    });
+    icSetteled.forEach((setting)=>{
+      setting.classList.add('font');
+    });
+  });
+  overlay.addEventListener('click', () => {
+    offcanva.classList.remove('showContent')
+    overlay.classList.remove('showContent');
+    instalogo.classList.remove('iconShow');
+    instaName.classList.remove('full');
+    navSec.forEach((nav)=>{
+      nav.classList.remove('mwidth');
+    });
+   icDetail.forEach((icon)=>{
+      icon.classList.remove('detail');
+    });
+    icSetteled.forEach((setting)=>{
+      setting.classList.remove('font');
+    });
+  });
+
 });
+// offcanvas end
