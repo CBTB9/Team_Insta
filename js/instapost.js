@@ -26,7 +26,7 @@ ihtml = `
                   <img src="assets/svg/share.svg" alt="">
                 </div>
                 <div class="right">
-                  <img src="assets/svg/favouritPost.svg" class="favourit" alt="">
+                  <img class="favourit" src="assets/svg/favouritPost.svg"  alt="">
                 </div>
               </div>
               <h4 class="likes">3,456 likes</h4>
