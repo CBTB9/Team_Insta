@@ -73,7 +73,7 @@ function loadContent(File) {
 // ============ message attach on navbar =============
 // offcanvas for search bar
 document.addEventListener("DOMContentLoaded", () => {
-  let openBtn = document.getElementById("openBtn");
+  let openBtn = document.getElementById("searchOpenBtn");
   let offcanva = document.getElementById('offcanva');
   let overlay = document.getElementById("overlay");
   let navSec = document.querySelectorAll('.navbar-sec');
@@ -114,70 +114,49 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
-// offcanvas end
+// ============ search offcanvas end =====================
 
+// notification offcanvas start
 
-// reels 
+document.addEventListener("DOMContentLoaded", () => {
+  let openBtn = document.getElementById("notificationOpenBtn");
+  let offcanva = document.getElementById('offcanva');
+  let overlay = document.getElementById("overlay");
+  let navSec = document.querySelectorAll('.navbar-sec');
+  let instalogo = document.getElementById('insta-logo');
+  let instaName = document.getElementById('insta-name');
+  let icDetail = document.querySelectorAll('.i-d');
+  let icSetteled = document.querySelectorAll('.nav-item')
+ 
+  openBtn.addEventListener('click', () => {
+    offcanva.classList.add('showContent');
+    overlay.classList.add('showContent');
+    instalogo.classList.add('iconShow');
+    instaName.classList.add('full');
+    navSec.forEach((nav)=>{
+      nav.classList.add('mwidth');
+    });
+   icDetail.forEach((icon)=>{
+      icon.classList.add('detail');
+    });
+    icSetteled.forEach((setting)=>{
+      setting.classList.add('font');
+    });
+  });
+  overlay.addEventListener('click', () => {
+    offcanva.classList.remove('showContent')
+    overlay.classList.remove('showContent');
+    instalogo.classList.remove('iconShow');
+    instaName.classList.remove('full');
+    navSec.forEach((nav)=>{
+      nav.classList.remove('mwidth');
+    });
+   icDetail.forEach((icon)=>{
+      icon.classList.remove('detail');
+    });
+    icSetteled.forEach((setting)=>{
+      setting.classList.remove('font');
+    });
+  });
 
-
-
-
-let reelsCard = document.querySelectorAll('.main-reels-sec')
-
-ihtml = `
-<div class=" d-flex reels-content-sec">
-          <!-- reels card -->
-          <div class="reels-card">
-            <img src="assets/images/IMG_4307.jpg" alt="">
-            <!-- play btn -->
-            <div class="play-btn">
-              <div class="play-main">
-                <img src="assets/svg/playbtn.svg" alt="">
-              </div>
-            </div>
-            <!-- profile reels main -->
-            <div class="content-reel d-flex flex-coloumn">
-              <!-- main firdt div -->
-              <div class="profile-detail-reel d-flex flex-row">
-                <div class="pro-detail">
-                  <div class="profile-name">
-                    <img src="assets/images/IMG-20240418-WA0007 (2).jpg" alt="">
-                    <span class="pro-name-reel">__Abdullah__Khan</span>
-                  </div>
-                  <div class="follow-btn"><span>Follow</span></div>
-                </div>
-              </div>
-              <!-- second div -->
-              <div class="hashtag d-flex flex-row">
-                <div><span>#viral</span></div>
-                <div><span>#reels</span></div>
-                <div><span>more...</span></div>
-              </div>
-              <!-- third div -->
-              <div class="song-detail">
-                <div class="audio-image"><img src="assets/svg/audio.svg" alt=""></div>
-                <div class="detail-song-reel"><span>Tum se piyar hum kertey hain hum</span></div>
-              </div>
-            </div>
-          </div>
-          <!-- action btns for reels -->
-          <div class="actions-btns-main">
-            <div class="action-btns">
-              <div class="like-sec">
-                <img src="assets/svg/heart.svg" alt="">
-                <div class="counter"><span>45k</span></div>
-              </div>
-              <div><img src="assets/svg/commentreel.svg" alt=""></div>
-              <div><img src="assets/svg/sharereel.svg" alt=""></div>
-              <div><img src="assets/svg/favouritPost.svg" alt=""></div>
-              <div><img src="assets/svg/dotbtn.svg" alt=""></div>
-              <div><img class="song-img-det" src="assets/images/IMG-20240418-WA0007 (2).jpg" alt=""></div>
-            </div>
-          </div>
-        </div>`;
-
-reelsCard.forEach(reelcard => {
-    reelcard.innerHTML = ihtml
 });
-
-
