@@ -37,7 +37,7 @@
     }
 
     .navbar-sec .nav-item {
-        margin: auto auto auto 1rem !important;
+        /* margin: auto auto auto 1rem !important; */
     }
 
     .insta-logo {
@@ -77,9 +77,8 @@
     .insta-name {
         display: none;
     }
-
-    .navbar-sec .nav-item {
-        margin: auto auto auto 1rem !important;
+    .ms-3{
+        margin-left: 0.3rem !important;
     }
 
     .insta-logo {
