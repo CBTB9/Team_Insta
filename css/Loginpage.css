@@ -32,7 +32,6 @@ body {
 .login-form {
     width: 350px;
     padding: 10px;
-    border: 1px solid #dbdbdb;
     background-color: #fff;
     margin-left: 32px;
     text-align: center;
@@ -105,9 +104,8 @@ a {
 }
 
 .signup {
-    margin: 20px 0;
+    margin: 13px 0;
     padding: 10px 0;
-    border-top: 2px solid #dbdbdb;
     border-bottom:0px solid #dbdbdb;
 }
 
