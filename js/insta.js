@@ -29,10 +29,7 @@ setTimeout(() => {
   }
 }, 200);
 
-// end
-
 // suggestion scroll carosel
-
 function scrolll() {
   let left = document.querySelector(".scroll-images");
   left.scrollBy(350, 0)
@@ -43,7 +40,6 @@ function scrollr() {
 }
 // ====== like btn ======
 document.addEventListener('DOMContentLoaded', function () {
-  // Select all like buttons
   const likeButtons = document.querySelectorAll('.like-button');
 
   // Iterate over each button and add a click event listener
@@ -54,7 +50,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
-
 
 // ====== favourite btn ========
 // select all like buttons
@@ -84,11 +79,7 @@ function loadContent(File) {
     .catch(error => console.error('Error loading content', error));
 }
 // ============ message attach on navbar =============
-
-// for scrollbar working
-
 // offcanvas for search bar
-
 document.addEventListener("DOMContentLoaded", () => {
   let openBtn = document.getElementById("openBtn");
   let offcanva = document.getElementById('offcanva');
