@@ -1,7 +1,5 @@
 
-
-
-let reelsCard = document.querySelectorAll('.main-reels-sec')
+let reelsCard = document.querySelectorAll(".main-reels-sec")
 
 ihtml = `
 <div class=" d-flex reels-content-sec">
@@ -53,10 +51,10 @@ ihtml = `
               <div><img class="song-img-det" src="assets/images/IMG-20240418-WA0007 (2).jpg" alt=""></div>
             </div>
           </div>
-        </div>`;
+        </div>`
 
-reelsCard.forEach(card => {
-    card.innerHTML = ihtml
-})
+reelsCard.forEach(reelcard => {
+    reelcard.innerHTML = ihtml
+});
 
 
