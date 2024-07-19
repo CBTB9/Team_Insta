@@ -1,31 +1,16 @@
-let url = "https://instagram-scraper-api2.p.rapidapi.com/v1/likes?code_or_id_or_url=CxYQJO8xuC6"
-const options = {
-    method: 'GET',
-    headers: {
-        'x-rapidapi-key': '3a030c9211msh6c0d3fa92ea0031p12d91fjsn32f0c365da2b',
-        'x-rapidapi-host': 'instagram-scraper-api2.p.rapidapi.com'
-    }
-}
-let response = fetch(url, options)
 
-response.then((v) => {
-    return v.json()
-}).then((content) => {
-    console.log(content)
-    let postCard = document.querySelectorAll('.post')
 
-    ihtml = ""
 
-    for (data in content) {
-        console.log(content[data])
-        ihtml += `
+let postCard = document.querySelectorAll('.post')
+
+ihtml = `
         <div class="card mb-5">
               <div class="top">
                 <div class="userdetail">
                   <div class="profile-image">
-                    <img src="" alt="" class="cover" srcset="">
+                    <img src="assets/images/IMG-20240418-WA0007 (1).jpg" alt="" class="cover" srcset="">
                   </div>
-                  <h3>${content[data].items[12].full_name}<br><span>Rahim Yar Khan</span></h3>
+                  <h3>Muhammad Sikandar<br><span>Rahim Yar Khan</span></h3>
                 </div>
                 <div>
                   <img src="assets/svg/dotbtn.svg" class="dot" alt="">
@@ -36,12 +21,12 @@ response.then((v) => {
               </div>
               <div class="actionsBtns">
                 <div class="left">
-                  <img class="like-button" src="/assets/svg/heart.svg">
+                  <img class="like-button" src="assets/svg/heart.svg">
                   <img src="assets/svg/comment.svg" alt="">
                   <img src="assets/svg/share.svg" alt="">
                 </div>
                 <div class="right">
-                  <img src="assets/svg/favouritPost.svg" class="favourit" alt="">
+                  <img class="favourit" src="assets/svg/favouritPost.svg"  alt="">
                 </div>
               </div>
               <h4 class="likes">3,456 likes</h4>
@@ -57,10 +42,10 @@ response.then((v) => {
                 <input type="text" class="text" placeholder="Add a comment...">
               </div>
               <h5 class="postTime">4 hours ago</h5>
-            </div>`
-    }
+            </div>`;
 
-    postCard.forEach(card => {
-        card.innerHTML = ihtml
-    });
-});
+postCard.forEach(card =>{
+  card.innerHTML = ihtml
+})
+
+

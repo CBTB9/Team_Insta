@@ -3,6 +3,20 @@
     .card {
         height: 850px !important;
     }
+
+    /* message section */
+
+    .user-detail-fixed {
+        width: 85% !important;
+    }
+
+    .chat-detail .chat-input {
+        width: 60% !important;
+    }
+
+    .main-message .profile-message-contact-detail {
+        width: 30% !important;
+    }
 }
 
 /* media quiry for large divices */
@@ -23,7 +37,7 @@
     }
 
     .navbar-sec .nav-item {
-        margin: auto auto auto 1rem !important;
+        /* margin: auto auto auto 1rem !important; */
     }
 
     .insta-logo {
@@ -56,16 +70,15 @@
         max-width: 7vmax !important;
     }
 
-    .content-main-1{
+    .content-main-1 {
         margin-left: 7vmax !important;
     }
 
     .insta-name {
         display: none;
     }
-
-    .navbar-sec .nav-item {
-        margin: auto auto auto 1rem !important;
+    .ms-3{
+        margin-left: 0.3rem !important;
     }
 
     .insta-logo {
@@ -85,9 +98,11 @@
     .sugested-sec {
         display: none;
     }
+
     .sugested-foryou-main {
         display: none !important;
     }
+
     /* sidebar width */
 
 }
@@ -146,13 +161,15 @@
     .main-sec .container {
         padding: 0 !important;
     }
+
     .content-main-1 {
         margin-left: 0 !important;
     }
+
     .main-sec {
         padding-top: 90px;
     }
- 
+
     .post-sec {
         margin: 0 !important;
         padding: 0 !important;
@@ -170,7 +187,22 @@
     .sugested-sec {
         display: none;
     }
+
     .sugested-foryou-main {
+        display: none !important;
+    }
+
+    /* reels section */
+    .reels-content-sec {
+        margin-top: 12%;
+    }
+
+    /* message section */
+    .fixed-nav-1-detail {
+        display: none !important;
+    }
+
+    .main-message .profile-message-contact-detail {
         display: none !important;
     }
 
@@ -235,7 +267,8 @@
     .content-main-1 {
         margin: 0 !important;
     }
-    .card{
+
+    .card {
         max-width: 600px;
     }
 
@@ -271,4 +304,72 @@
         display: none !important;
     }
 
+    /* reels section */
+
+    .reels-content-sec {
+        margin-top: 12%;
+        width: 100%;
+    }
+
+    /* message section */
+    .fixed-nav-1-detail {
+        display: none !important;
+    }
+
+    .main-message .profile-message-contact-detail {
+        display: none !important;
+    }
+
+    .user-detail-fixed {
+        top: 10% !important;
+        width: 100% !important;
+    }
+
+    .chat-detail-fixed .first-user {
+        gap: 0 !important;
+    }
+
+    .first-user .first-user-name .first-user-name-name {
+        font-size: 12px !important;
+    }
+
+    .first-user .first-user-name .first-user-name-active {
+        font-size: 8px !important;
+    }
+
+    .chat-detail-fixed .fixed-top-icon div img {
+        width: 16px;
+    }
+    .chat-detail .all-chat-user-deatail .chat-user{
+        margin-top: 0 !important;
+    }
+    .all-chat-user-deatail .chat-user .image-chat-det img{
+        width: 75px !important;
+        height: 75px !important;
+    }
+    .all-chat-user-deatail .chat-user .chat-det-name {
+        font-size: 14px !important;
+    }
+    .all-chat-user-deatail .chat-user .chat-det-user-name{
+        font-size: 10px;
+    }
+    .all-chat-user-deatail .chat-user .chat-det-view-btn{
+        margin-top: 10px !important;
+    }
+    .chat-detail .chat-input{
+        bottom: 9% !important;
+        margin: 5px !important;
+        width: 97% !important;
+        font-size: 12px !important;
+        letter-spacing: 1px !important;
+    }
+    .first-two-svgs .imoji-input img{
+        width: 16px !important;
+    }
+    .chat-input .input-last-svgs div span img{
+        width: 16px !important;
+    }
+    .chat-input .main-input-text input::placeholder{
+        font-size: 12px !important;
+    }
 }
