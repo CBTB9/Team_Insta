@@ -43,15 +43,42 @@
                 </li>
                 <!-- offcanvas search -->
                 <li class="nav-item">
-                    <a class="nav-link navbar-item active" id="home" aria-current="page" href="#"><img
-                            src="assets/svg/search.svg" alt="" srcset=""></a>
+                    <a class="nav-link navbar-item active" id="searchOpenBtn" id="home" aria-current="page"
+                        href="#"><img src="assets/svg/search.svg" alt="" srcset=""></a>
                 </li>
+                <div class="offcanva" id="offcanva">
+                    <div class="content">
+                        <h2 class="search-off"><span>Search</span></h2>
+                        <div class="input"><input class="input-inner" type="text" placeholder="Search">
+                            <div class="cancel-svg"><img src="assets/svg/crossoffinput.svg" alt=""></div>
+                        </div>
+                        <hr class="off-hr">
+                        <div class="recent"><span>Recent</span></div>
+                        <div class="recent-search-result">
+                            <div class="result"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay" id="overlay"></div>
                 <!-- offcanvas serach end -->
                 <!-- notification section -->
                 <li class="nav-item">
-                    <a class="nav-link navbar-item" aria-disabled="true"><img src="assets/svg/threadmobnotification.svg"
-                            alt="" srcset=""></a>
+                    <a id="notificationOpenBtn" class="nav-link navbar-item" aria-disabled="true"><img
+                            src="assets/svg/threadmobnotification.svg" alt="" srcset=""></a>
                 </li>
+                <!-- offcanvas notification -->
+                <div class="offcanva" id="offcanva">
+                    <div class="content">
+                        <h2 class="search-off"><span>Notifications</span></h2>
+                        <hr class="off-hr">
+                        <div class="recent"><span>Recent</span></div>
+                        <div class="recent-search-result">
+                            <div class="result"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay" id="overlay"></div>
+                <!-- offcanva end -->
                 <!-- user acount -->
                 <li class="nav-item">
                     <a class="nav-link navbar-item" onclick="loadContent('messagebox.html')" aria-disabled="true"><img
@@ -63,8 +90,8 @@
                 <!-- last thread and more option -->
                 <!-- pin to home -->
                 <li class="nav-item">
-                    <a class="nav-link thread navbar-item" onclick="loadContent('threads.html')"
-                        aria-disabled="true"><img onclick="loadContent('threads.html')" src="assets/svg/pintohome.svg"
+                    <a href="index.html" class="nav-link thread navbar-item" 
+                        aria-disabled="true"><img  src="assets/svg/pintohome.svg"
                             alt="" srcset=""></a>
                     <!-- more option -->
                 </li>
@@ -141,16 +168,19 @@
                                     <div class="post-content">
                                         <!-- first flex pro-det -->
                                         <div class="profile-name-post">
-                                            <div class="pro-name"><span>quoteswikipedia</span><span class="time-ago">13h</span></div>
+                                            <div class="pro-name"><span>quoteswikipedia</span><span
+                                                    class="time-ago">13h</span></div>
                                             <div class="three-dot-btn"><img src="/assets/svg/dotbtn.svg" alt=""></div>
                                         </div>
                                         <!-- second flex post det -->
                                         <div class="post-det">
                                             <div class="content-det">
-                                                <span>A cat has absolute emotional honesty: human beings, for one reason or another, may hide their feelings, but a cat does not.❤️
+                                                <span>A cat has absolute emotional honesty: human beings, for one reason
+                                                    or another, may hide their feelings, but a cat does not.❤️
                                                 </span>
                                             </div>
-                                            <div class="hashtags"><a href="#" class="links-tags">MondayMotivation</a></div>
+                                            <div class="hashtags"><a href="#" class="links-tags">MondayMotivation</a>
+                                            </div>
                                         </div>
                                         <!-- post-video-content -->
                                         <div class="post-video-content">
@@ -160,10 +190,14 @@
                                         </div>
                                         <!-- post control btns -->
                                         <div class="control-btns d-flex flex-row">
-                                            <div class="like-btn"><img class="po-co-btns" src="/assets/svg/heart.svg" alt=""></div>
-                                            <div class="comment-btn"><img class="po-co-btns" src="/assets/svg/comment.svg" alt=""></div>
-                                            <div class="repost-btn"><img class="po-co-btns" src="/assets/svg/treadsvisit.svg" alt=""></div>
-                                            <div class="share-btn"><img class="po-co-btns" src="/assets/svg/share.svg" alt=""></div>
+                                            <div class="like-btn"><img class="po-co-btns" src="/assets/svg/heart.svg"
+                                                    alt=""></div>
+                                            <div class="comment-btn"><img class="po-co-btns"
+                                                    src="/assets/svg/comment.svg" alt=""></div>
+                                            <div class="repost-btn"><img class="po-co-btns"
+                                                    src="/assets/svg/treadsvisit.svg" alt=""></div>
+                                            <div class="share-btn"><img class="po-co-btns" src="/assets/svg/share.svg"
+                                                    alt=""></div>
                                         </div>
                                     </div>
                                 </div>
@@ -184,16 +218,19 @@
                                     <div class="post-content">
                                         <!-- first flex pro-det -->
                                         <div class="profile-name-post">
-                                            <div class="pro-name"><span>quoteswikipedia</span><span class="time-ago">13h</span></div>
+                                            <div class="pro-name"><span>quoteswikipedia</span><span
+                                                    class="time-ago">13h</span></div>
                                             <div class="three-dot-btn"><img src="/assets/svg/dotbtn.svg" alt=""></div>
                                         </div>
                                         <!-- second flex post det -->
                                         <div class="post-det">
                                             <div class="content-det">
-                                                <span>A cat has absolute emotional honesty: human beings, for one reason or another, may hide their feelings, but a cat does not.❤️
+                                                <span>A cat has absolute emotional honesty: human beings, for one reason
+                                                    or another, may hide their feelings, but a cat does not.❤️
                                                 </span>
                                             </div>
-                                            <div class="hashtags"><a href="#" class="links-tags">MondayMotivation</a></div>
+                                            <div class="hashtags"><a href="#" class="links-tags">MondayMotivation</a>
+                                            </div>
                                         </div>
                                         <!-- post-video-content -->
                                         <div class="post-video-content">
@@ -203,10 +240,14 @@
                                         </div>
                                         <!-- post control btns -->
                                         <div class="control-btns d-flex flex-row">
-                                            <div class="like-btn"><img class="po-co-btns" src="/assets/svg/heart.svg" alt=""></div>
-                                            <div class="comment-btn"><img class="po-co-btns" src="/assets/svg/comment.svg" alt=""></div>
-                                            <div class="repost-btn"><img class="po-co-btns" src="/assets/svg/treadsvisit.svg" alt=""></div>
-                                            <div class="share-btn"><img class="po-co-btns" src="/assets/svg/share.svg" alt=""></div>
+                                            <div class="like-btn"><img class="po-co-btns" src="/assets/svg/heart.svg"
+                                                    alt=""></div>
+                                            <div class="comment-btn"><img class="po-co-btns"
+                                                    src="/assets/svg/comment.svg" alt=""></div>
+                                            <div class="repost-btn"><img class="po-co-btns"
+                                                    src="/assets/svg/treadsvisit.svg" alt=""></div>
+                                            <div class="share-btn"><img class="po-co-btns" src="/assets/svg/share.svg"
+                                                    alt=""></div>
                                         </div>
                                     </div>
                                 </div>
@@ -227,16 +268,19 @@
                                     <div class="post-content">
                                         <!-- first flex pro-det -->
                                         <div class="profile-name-post">
-                                            <div class="pro-name"><span>quoteswikipedia</span><span class="time-ago">13h</span></div>
+                                            <div class="pro-name"><span>quoteswikipedia</span><span
+                                                    class="time-ago">13h</span></div>
                                             <div class="three-dot-btn"><img src="/assets/svg/dotbtn.svg" alt=""></div>
                                         </div>
                                         <!-- second flex post det -->
                                         <div class="post-det">
                                             <div class="content-det">
-                                                <span>A cat has absolute emotional honesty: human beings, for one reason or another, may hide their feelings, but a cat does not.❤️
+                                                <span>A cat has absolute emotional honesty: human beings, for one reason
+                                                    or another, may hide their feelings, but a cat does not.❤️
                                                 </span>
                                             </div>
-                                            <div class="hashtags"><a href="#" class="links-tags">MondayMotivation</a></div>
+                                            <div class="hashtags"><a href="#" class="links-tags">MondayMotivation</a>
+                                            </div>
                                         </div>
                                         <!-- post-video-content -->
                                         <div class="post-video-content">
@@ -246,10 +290,14 @@
                                         </div>
                                         <!-- post control btns -->
                                         <div class="control-btns d-flex flex-row">
-                                            <div class="like-btn"><img class="po-co-btns" src="/assets/svg/heart.svg" alt=""></div>
-                                            <div class="comment-btn"><img class="po-co-btns" src="/assets/svg/comment.svg" alt=""></div>
-                                            <div class="repost-btn"><img class="po-co-btns" src="/assets/svg/treadsvisit.svg" alt=""></div>
-                                            <div class="share-btn"><img class="po-co-btns" src="/assets/svg/share.svg" alt=""></div>
+                                            <div class="like-btn"><img class="po-co-btns" src="/assets/svg/heart.svg"
+                                                    alt=""></div>
+                                            <div class="comment-btn"><img class="po-co-btns"
+                                                    src="/assets/svg/comment.svg" alt=""></div>
+                                            <div class="repost-btn"><img class="po-co-btns"
+                                                    src="/assets/svg/treadsvisit.svg" alt=""></div>
+                                            <div class="share-btn"><img class="po-co-btns" src="/assets/svg/share.svg"
+                                                    alt=""></div>
                                         </div>
                                     </div>
                                 </div>
@@ -270,16 +318,19 @@
                                     <div class="post-content">
                                         <!-- first flex pro-det -->
                                         <div class="profile-name-post">
-                                            <div class="pro-name"><span>quoteswikipedia</span><span class="time-ago">13h</span></div>
+                                            <div class="pro-name"><span>quoteswikipedia</span><span
+                                                    class="time-ago">13h</span></div>
                                             <div class="three-dot-btn"><img src="/assets/svg/dotbtn.svg" alt=""></div>
                                         </div>
                                         <!-- second flex post det -->
                                         <div class="post-det">
                                             <div class="content-det">
-                                                <span>A cat has absolute emotional honesty: human beings, for one reason or another, may hide their feelings, but a cat does not.❤️
+                                                <span>A cat has absolute emotional honesty: human beings, for one reason
+                                                    or another, may hide their feelings, but a cat does not.❤️
                                                 </span>
                                             </div>
-                                            <div class="hashtags"><a href="#" class="links-tags">MondayMotivation</a></div>
+                                            <div class="hashtags"><a href="#" class="links-tags">MondayMotivation</a>
+                                            </div>
                                         </div>
                                         <!-- post-video-content -->
                                         <div class="post-video-content">
@@ -289,10 +340,14 @@
                                         </div>
                                         <!-- post control btns -->
                                         <div class="control-btns d-flex flex-row">
-                                            <div class="like-btn"><img class="po-co-btns" src="/assets/svg/heart.svg" alt=""></div>
-                                            <div class="comment-btn"><img class="po-co-btns" src="/assets/svg/comment.svg" alt=""></div>
-                                            <div class="repost-btn"><img class="po-co-btns" src="/assets/svg/treadsvisit.svg" alt=""></div>
-                                            <div class="share-btn"><img class="po-co-btns" src="/assets/svg/share.svg" alt=""></div>
+                                            <div class="like-btn"><img class="po-co-btns" src="/assets/svg/heart.svg"
+                                                    alt=""></div>
+                                            <div class="comment-btn"><img class="po-co-btns"
+                                                    src="/assets/svg/comment.svg" alt=""></div>
+                                            <div class="repost-btn"><img class="po-co-btns"
+                                                    src="/assets/svg/treadsvisit.svg" alt=""></div>
+                                            <div class="share-btn"><img class="po-co-btns" src="/assets/svg/share.svg"
+                                                    alt=""></div>
                                         </div>
                                     </div>
                                 </div>
@@ -313,16 +368,19 @@
                                     <div class="post-content">
                                         <!-- first flex pro-det -->
                                         <div class="profile-name-post">
-                                            <div class="pro-name"><span>quoteswikipedia</span><span class="time-ago">13h</span></div>
+                                            <div class="pro-name"><span>quoteswikipedia</span><span
+                                                    class="time-ago">13h</span></div>
                                             <div class="three-dot-btn"><img src="/assets/svg/dotbtn.svg" alt=""></div>
                                         </div>
                                         <!-- second flex post det -->
                                         <div class="post-det">
                                             <div class="content-det">
-                                                <span>A cat has absolute emotional honesty: human beings, for one reason or another, may hide their feelings, but a cat does not.❤️
+                                                <span>A cat has absolute emotional honesty: human beings, for one reason
+                                                    or another, may hide their feelings, but a cat does not.❤️
                                                 </span>
                                             </div>
-                                            <div class="hashtags"><a href="#" class="links-tags">MondayMotivation</a></div>
+                                            <div class="hashtags"><a href="#" class="links-tags">MondayMotivation</a>
+                                            </div>
                                         </div>
                                         <!-- post-video-content -->
                                         <div class="post-video-content">
@@ -332,10 +390,14 @@
                                         </div>
                                         <!-- post control btns -->
                                         <div class="control-btns d-flex flex-row">
-                                            <div class="like-btn"><img class="po-co-btns" src="/assets/svg/heart.svg" alt=""></div>
-                                            <div class="comment-btn"><img class="po-co-btns" src="/assets/svg/comment.svg" alt=""></div>
-                                            <div class="repost-btn"><img class="po-co-btns" src="/assets/svg/treadsvisit.svg" alt=""></div>
-                                            <div class="share-btn"><img class="po-co-btns" src="/assets/svg/share.svg" alt=""></div>
+                                            <div class="like-btn"><img class="po-co-btns" src="/assets/svg/heart.svg"
+                                                    alt=""></div>
+                                            <div class="comment-btn"><img class="po-co-btns"
+                                                    src="/assets/svg/comment.svg" alt=""></div>
+                                            <div class="repost-btn"><img class="po-co-btns"
+                                                    src="/assets/svg/treadsvisit.svg" alt=""></div>
+                                            <div class="share-btn"><img class="po-co-btns" src="/assets/svg/share.svg"
+                                                    alt=""></div>
                                         </div>
                                     </div>
                                 </div>
@@ -356,16 +418,19 @@
                                     <div class="post-content">
                                         <!-- first flex pro-det -->
                                         <div class="profile-name-post">
-                                            <div class="pro-name"><span>quoteswikipedia</span><span class="time-ago">13h</span></div>
+                                            <div class="pro-name"><span>quoteswikipedia</span><span
+                                                    class="time-ago">13h</span></div>
                                             <div class="three-dot-btn"><img src="/assets/svg/dotbtn.svg" alt=""></div>
                                         </div>
                                         <!-- second flex post det -->
                                         <div class="post-det">
                                             <div class="content-det">
-                                                <span>A cat has absolute emotional honesty: human beings, for one reason or another, may hide their feelings, but a cat does not.❤️
+                                                <span>A cat has absolute emotional honesty: human beings, for one reason
+                                                    or another, may hide their feelings, but a cat does not.❤️
                                                 </span>
                                             </div>
-                                            <div class="hashtags"><a href="#" class="links-tags">MondayMotivation</a></div>
+                                            <div class="hashtags"><a href="#" class="links-tags">MondayMotivation</a>
+                                            </div>
                                         </div>
                                         <!-- post-video-content -->
                                         <div class="post-video-content">
@@ -375,10 +440,14 @@
                                         </div>
                                         <!-- post control btns -->
                                         <div class="control-btns d-flex flex-row">
-                                            <div class="like-btn"><img class="po-co-btns" src="/assets/svg/heart.svg" alt=""></div>
-                                            <div class="comment-btn"><img class="po-co-btns" src="/assets/svg/comment.svg" alt=""></div>
-                                            <div class="repost-btn"><img class="po-co-btns" src="/assets/svg/treadsvisit.svg" alt=""></div>
-                                            <div class="share-btn"><img class="po-co-btns" src="/assets/svg/share.svg" alt=""></div>
+                                            <div class="like-btn"><img class="po-co-btns" src="/assets/svg/heart.svg"
+                                                    alt=""></div>
+                                            <div class="comment-btn"><img class="po-co-btns"
+                                                    src="/assets/svg/comment.svg" alt=""></div>
+                                            <div class="repost-btn"><img class="po-co-btns"
+                                                    src="/assets/svg/treadsvisit.svg" alt=""></div>
+                                            <div class="share-btn"><img class="po-co-btns" src="/assets/svg/share.svg"
+                                                    alt=""></div>
                                         </div>
                                     </div>
                                 </div>
@@ -399,16 +468,19 @@
                                     <div class="post-content">
                                         <!-- first flex pro-det -->
                                         <div class="profile-name-post">
-                                            <div class="pro-name"><span>quoteswikipedia</span><span class="time-ago">13h</span></div>
+                                            <div class="pro-name"><span>quoteswikipedia</span><span
+                                                    class="time-ago">13h</span></div>
                                             <div class="three-dot-btn"><img src="/assets/svg/dotbtn.svg" alt=""></div>
                                         </div>
                                         <!-- second flex post det -->
                                         <div class="post-det">
                                             <div class="content-det">
-                                                <span>A cat has absolute emotional honesty: human beings, for one reason or another, may hide their feelings, but a cat does not.❤️
+                                                <span>A cat has absolute emotional honesty: human beings, for one reason
+                                                    or another, may hide their feelings, but a cat does not.❤️
                                                 </span>
                                             </div>
-                                            <div class="hashtags"><a href="#" class="links-tags">MondayMotivation</a></div>
+                                            <div class="hashtags"><a href="#" class="links-tags">MondayMotivation</a>
+                                            </div>
                                         </div>
                                         <!-- post-video-content -->
                                         <div class="post-video-content">
@@ -418,10 +490,14 @@
                                         </div>
                                         <!-- post control btns -->
                                         <div class="control-btns d-flex flex-row">
-                                            <div class="like-btn"><img class="po-co-btns" src="/assets/svg/heart.svg" alt=""></div>
-                                            <div class="comment-btn"><img class="po-co-btns" src="/assets/svg/comment.svg" alt=""></div>
-                                            <div class="repost-btn"><img class="po-co-btns" src="/assets/svg/treadsvisit.svg" alt=""></div>
-                                            <div class="share-btn"><img class="po-co-btns" src="/assets/svg/share.svg" alt=""></div>
+                                            <div class="like-btn"><img class="po-co-btns" src="/assets/svg/heart.svg"
+                                                    alt=""></div>
+                                            <div class="comment-btn"><img class="po-co-btns"
+                                                    src="/assets/svg/comment.svg" alt=""></div>
+                                            <div class="repost-btn"><img class="po-co-btns"
+                                                    src="/assets/svg/treadsvisit.svg" alt=""></div>
+                                            <div class="share-btn"><img class="po-co-btns" src="/assets/svg/share.svg"
+                                                    alt=""></div>
                                         </div>
                                     </div>
                                 </div>
