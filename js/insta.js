@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // notification offcanvas start
 
 document.addEventListener("DOMContentLoaded", () => {
-  let openBtn = document.getElementById("notificationOpenBtn");
+  let notificationOpenBtn = document.getElementById("notification");
   let offcanva = document.getElementById('offcanva');
   let overlay = document.getElementById("overlay");
   let navSec = document.querySelectorAll('.navbar-sec');
@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let icDetail = document.querySelectorAll('.i-d');
   let icSetteled = document.querySelectorAll('.nav-item')
  
-  openBtn.addEventListener('click', () => {
+  notificationOpenBtn.addEventListener('click', () => {
     offcanva.classList.add('showContent');
     overlay.classList.add('showContent');
     instalogo.classList.add('iconShow');
@@ -159,4 +159,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+});
+
+// navbar active content
+const navitems = document.querySelectorAll(".nav-item");
+
+navitems.forEach(item =>{
+  item.addEventListener('click', ()=>{
+    navitems.forEach(nav => nav.classList.remove('active'));
+    item.classList.add('active');
+  });
 });
