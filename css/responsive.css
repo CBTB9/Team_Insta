@@ -36,10 +36,6 @@
         display: none;
     }
 
-    .navbar-sec .nav-item {
-        /* margin: auto auto auto 1rem !important; */
-    }
-
     .insta-logo {
         content: url(/assets/svg/instalogo.svg);
         margin-left: 4px !important;
