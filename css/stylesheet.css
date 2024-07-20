@@ -162,21 +162,30 @@ ul li {
 }
 .nav-item.active a .homeActive{
     content: url(/assets/svg/home.svg);
+    background: transparent;
 }
 .nav-item.active a .searchActive{
     content: url(/assets/svg/searchActive2.svg);
+    background: transparent;
 }
 .nav-item.active a .exploreActive{
     content: url(/assets/svg/exploreactive.svg);
+    background: transparent;
 }
 .nav-item.active a .reelsActive{
     content: url(/assets/svg/reelsActive.svg);
+    background: transparent;
+}
+.nav-item.active a {
+    background: transparent;
 }
 .nav-item.active a .messageActive{
     content: url(/assets/svg/messageActive2.svg);
+    background: transparent;
 }
 .nav-item.active a .notificationActive{
     content: url(/assets/svg/notificationActive.svg);
+    background: transparent;
 }
 .navbar-item {
     display: flex;
