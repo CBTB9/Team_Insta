@@ -145,11 +145,39 @@ ul li {
 .nav-item a:hover {
     background: var(--border-color);
 }
+.nav-item a:focus,
+.nav-item a img:focus,
+.navbar-item:focus
+{
+    background-color: transparent;
+    outline: none;
+}
 
 .thread:hover {
     background-image: url(/assets/svg/treadsvisit.svg);
 }
 
+.nav-item.active a span{
+    font-weight: 700;
+}
+.nav-item.active a .homeActive{
+    content: url(/assets/svg/home.svg);
+}
+.nav-item.active a .searchActive{
+    content: url(/assets/svg/searchActive2.svg);
+}
+.nav-item.active a .exploreActive{
+    content: url(/assets/svg/exploreactive.svg);
+}
+.nav-item.active a .reelsActive{
+    content: url(/assets/svg/reelsActive.svg);
+}
+.nav-item.active a .messageActive{
+    content: url(/assets/svg/messageActive2.svg);
+}
+.nav-item.active a .notificationActive{
+    content: url(/assets/svg/notificationActive.svg);
+}
 .navbar-item {
     display: flex;
     width: fit-content;
@@ -244,7 +272,7 @@ ul li {
     display: block;
 }
 .offcanva.showContent{
-    left: 3vmax;
+    left: 4vmax;
 }
 /* sidebar content when offcanvas start */
 .navbar-sec.mwidth{
@@ -256,6 +284,7 @@ ul li {
 
 .insta-logo.iconShow {
     content: url(/assets/svg/instalogo.svg);
+    margin-left: 3px !important;
 }
 
 .i-d.detail {
