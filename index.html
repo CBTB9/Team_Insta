@@ -46,13 +46,13 @@
             src="assets/svg/logo.svg" alt="" srcset=""></a>
         <li class="nav-item" id="nav-item">
           <a class="nav-link navbar-item active" onclick="loadContent('home.html')" id="home" aria-current="page"
-            href="#"><img onclick="loadContent('home.html')" src="assets/svg/home.svg" alt="" srcset=""><span
-              class="i-d" id="i-d">Home</span></a>
+            href="#"><img class="homeActive" onclick="loadContent('home.html')" src="assets/svg/homeNonActive.svg" alt="" srcset=""><span
+              class="i-d" >Home</span></a>
         </li>
         <!-- offcanvas search -->
         <li class="nav-item" id="nav-item">
-          <a class="nav-link navbar-item active" id="searchOpenBtn" id="home" aria-current="page" href="#"><img  src="assets/svg/searchindex.svg"
-              alt="" srcset=""><span class="i-d" id="i-d">Search</span></a>
+          <a class="nav-link navbar-item active" id="searchOpenBtn" id="home" aria-current="page" href="#"><img class="searchActive" src="assets/svg/searchindex.svg"
+              alt="" srcset=""><span class="i-d">Search</span></a>
         </li>
         <div class="offcanva" id="offcanva">
           <div class="content">
@@ -71,21 +71,21 @@
         <!-- offcanvas serach end -->
         <li class="nav-item" id="nav-item">
           <a class="nav-link navbar-item" onclick="loadContent('explore.html')" href="#"><img
-              onclick="loadContent('explore.html')" src="assets/svg/Explor.svg" alt="" srcset=""><span
+            class="exploreActive" onclick="loadContent('explore.html')" src="assets/svg/Explor.svg" alt="" srcset=""><span
               class="i-d" id="i-d">Explore</span></a>
         </li>
         <li class="nav-item" id="nav-item">
-          <a class="nav-link navbar-item" onclick="loadContent('reels.html')" id="loadReels" aria-disabled="true"><img
+          <a class="nav-link navbar-item" onclick="loadContent('reels.html')" id="loadReels" aria-disabled="true"><img class="reelsActive"
               class="reelBtn" onclick="loadContent('reels.html')" src="assets/svg/reels.svg" alt="" srcset=""><span
               class="i-d" id="i-d">Reels</span></a>
         </li>
         <li class="nav-item" id="nav-item">
-          <a class="nav-link navbar-item" onclick="loadContent('messagebox.html')" aria-disabled="true"><img
+          <a class="nav-link navbar-item" onclick="loadContent('messagebox.html')" aria-disabled="true"><img class="messageActive"
               onclick="loadContent('messagebox.html')" src="assets/svg/messages.svg" alt="" srcset=""><span
               class="i-d" id="i-d">Messages</span></a>
         </li>
         <li class="nav-item" id="nav-item">
-          <a class="nav-link navbar-item" id="notificationOpenBtn" aria-disabled="true"><img src="assets/svg/notification.svg" alt=""
+          <a class="nav-link navbar-item" id="notification" aria-disabled="true"><img  class="notificationActive" src="assets/svg/notification.svg" alt=""
               srcset=""><span class="i-d" id="i-d">Notifications</span></a>
         </li>
         <!-- offcanvas notification -->
@@ -102,7 +102,7 @@
         <div class="overlay" id="overlay"></div>
         <!-- offcanva end -->
         <li class="nav-item" id="nav-item">
-          <a class="nav-link navbar-item" onclick="loadContent('create.html')" aria-disabled="true"><img
+          <a class="nav-link navbar-item" onclick="loadContent('create.html')" aria-disabled="true"><img class="createActive"
               onclick="loadContent('create.html')" src="assets/svg/creat.svg" alt="" srcset=""><span
               class="i-d" id="i-d">Create</span></a>
         </li>
@@ -161,22 +161,22 @@
     <ul class="navbar-nav d-flex flex-row justify-content-start">
       <li class="nav-item mob-i-m" id="nav-item">
         <a class="nav-link active" aria-current="page" href="#"><img onclick="loadContent('home.html')"
-            src="assets/svg/home.svg" alt="" srcset=""><span class="i-d" id="i-d"></span></a>
+          class="homeActive" src="assets/svg/homeNonActive.svg" alt="" srcset=""><span class="i-d" id="i-d"></span></a>
       </li>
       <li class="nav-item mob-i-m" id="nav-item">
-        <a class="nav-link" href="#"><img onclick="loadContent('explore.html')" src="assets/svg/Explor.svg" alt=""
+        <a class="nav-link" href="#"><img class="exploreActive" onclick="loadContent('explore.html')" src="assets/svg/Explor.svg" alt=""
             srcset=""><span class="i-d" id="i-d"></span></a>
       </li>
       <li class="nav-item mob-i-m" id="nav-item">
-        <a class="nav-link" aria-disabled="true"><img onclick="loadContent('reels.html')" src="assets/svg/reels.svg"
+        <a class="nav-link" aria-disabled="true"><img class="reelsActive" onclick="loadContent('reels.html')" src="assets/svg/reels.svg"
             alt="" srcset=""><span class="i-d" id="i-d"></span></a>
       </li>
       <li class="nav-item mob-i-m" id="nav-item">
-        <a class="nav-link" aria-disabled="true"><img onclick="loadContent('create.html')" src="assets/svg/creat.svg"
+        <a class="nav-link" aria-disabled="true"><img class="createActive" onclick="loadContent('create.html')" src="assets/svg/creat.svg"
             alt="" srcset=""><span class="i-d" id="i-d"></span></a>
       </li>
       <li class="nav-item mob-i-m" id="nav-item">
-        <a class="nav-link" aria-disabled="true"><img onclick="loadContent('messagebox.html')"
+        <a class="nav-link" aria-disabled="true"><img class="messageActive" onclick="loadContent('messagebox.html')"
             src="assets/svg/messages.svg" alt="" srcset=""><span class="i-d" id="i-d"></span></a>
       </li>
       <li class="nav-item mob-i-m" id="nav-item">
