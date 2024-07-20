@@ -56,7 +56,7 @@ a {
 
 /* reels card image */
 .reels-card img {
-    width: 500px;
+    width: inherit;
     height: auto;
     object-fit: contain;
     border-radius: 10px;
@@ -109,7 +109,9 @@ a {
     bottom: 1%;
     left: 8%;
 }
-
+.profile-detail-reel{
+    width: max-content;
+}
 
 .reels-card .pro-detail .profile-name .pro-name-reel {
     font-size: 14px;
