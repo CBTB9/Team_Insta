@@ -42,6 +42,7 @@
 
     .insta-logo {
         content: url(/assets/svg/instalogo.svg);
+        margin-left: 4px !important;
     }
 
     /* icons details/ only icons */
@@ -136,7 +137,7 @@
     }
 
     .nav-item {
-        padding: 5px 15px !important;
+        padding: 5px 5px !important;
     }
 
     /* navbar bottom on mobile screen */
@@ -238,7 +239,7 @@
     }
 
     .nav-item {
-        padding: 5px 15px !important;
+        padding: 5px 5px !important;
     }
 
     /* navbar bottom on mobile screen */
@@ -257,6 +258,7 @@
         display: flex !important;
         justify-content: space-evenly !important;
         align-items: center;
+        padding: 0px 5px !important;
     }
 
     /* content main section */
@@ -305,11 +307,15 @@
     }
 
     /* reels section */
-
+    .main-reels-sec{
+        margin: 5px !important;
+    }
     .reels-content-sec {
         margin-top: 12%;
         width: 100%;
     }
+    
+    
 
     /* message section */
     .fixed-nav-1-detail {
