@@ -178,6 +178,7 @@ ul li {
 }
 .nav-item.active a {
     background: transparent;
+    outline: none;
 }
 .nav-item.active a .messageActive{
     content: url(/assets/svg/messageActive2.svg);
