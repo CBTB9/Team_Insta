@@ -233,18 +233,19 @@ img {
   }
 
   .profile-image img {
-      width: 7.7rem;
+    width: 7.7rem;
+    height: 7.7rem;
   }
 
   .profile-user-settings {
       flex-basis: calc(100% - 10.7rem);
-      display: flex;
+      /* display: grid; */
       flex-wrap: wrap;
       margin-top: 1rem;
   }
 
   .profile-user-name {
-      font-size: 2.2rem;
+      font-size: 2rem;
   }
 
   .profile-edit-btn {
@@ -259,7 +260,7 @@ img {
   }
 
   .profile-bio {
-      font-size: 1.4rem;
+      font-size: 1.1rem;
       margin-top: 1.5rem;
   }
 
@@ -283,7 +284,7 @@ img {
   }
 
   .profile-stats li {
-      font-size: 1.4rem;
+      font-size: 1.1rem;
       flex: 1;
       margin: 0;
   }
