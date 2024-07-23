@@ -191,9 +191,12 @@
 
     /* reels section */
     .reels-content-sec {
-        margin-top: 12%;
+        margin-top: 18%;
     }
-
+    .reels-content-sec .actions-btns-main{
+        margin-left: -45px !important;
+        z-index: 999 !important;
+    }
     /* message section */
     .fixed-nav-1-detail {
         display: none !important;
@@ -202,6 +205,8 @@
     .main-message .profile-message-contact-detail {
         display: none !important;
     }
+
+   
 
 }
 
@@ -307,10 +312,13 @@
         margin: 5px !important;
     }
     .reels-content-sec {
-        margin-top: 12%;
+        margin-top: 18%;
         width: 100%;
     }
-    
+    .reels-content-sec .actions-btns-main{
+        margin-left: -45px !important;
+        z-index: 999 !important;
+    }
     
 
     /* message section */
