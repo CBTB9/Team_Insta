@@ -162,8 +162,8 @@ a {
 
 .reels-card .play-btn .play-main {
     position: relative;
-    width: 71px;
-    height: 71px;
+    width: 61px;
+    height: 61px;
     background: rgba(13, 13, 13, 0.61);
     border-radius: 50%;
 }
@@ -172,8 +172,8 @@ a {
     width: 24px;
     height: 24px;
     position: absolute;
-    top: 35%;
-    left: 35%;
+    top: 32%;
+    left: 32%;
 }
 
 /* actions btns */
